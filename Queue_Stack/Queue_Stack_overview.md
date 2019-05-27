@@ -6,4 +6,4 @@
 我们将详细介绍每个数据结构的定义，实现和内置函数。 然后，我们将更多地关注这两种数据结构的实际应用。
 
 ## 先入先出的数据结构
-![fifo](./img/fifo_eg.png)
+![fifo](https://github.com/wnz27/Algorithms_Note/blob/master/img/fifo_eg.png)
