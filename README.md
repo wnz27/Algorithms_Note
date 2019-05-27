@@ -15,6 +15,9 @@
 - [929. Unique Email Addresses easy](./algorithms_practice/929.UniqueEmailAddresses.py)
 - [709. To Lower Case easy](./algorithms_practice/709.ToLowerCase.py)
 
+## Array and String  数组和字符串
+- [数组和字符串基础知识概览](./Array_String/Array_String_overview.md)
+
 ## Queue & Stack  队列和栈
 - [队列和栈基础知识概览](./Queue_Stack/Queue_Stack_overview.md)
 - 
