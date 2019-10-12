@@ -14,6 +14,10 @@
 - [811. Subdomain Visit Count easy](./algorithms_practice/811.SubdomainVisitCount.py)
 - [929. Unique Email Addresses easy](./algorithms_practice/929.UniqueEmailAddresses.py)
 - [709. To Lower Case easy](./algorithms_practice/709.ToLowerCase.py)
+- [LCP1. 猜数字](./algorithms_practice/LCP1.py)
+- [1108. IP地址无效化](./algorithms_practice/1108.IP地址无效化.py)
+- [237.  删除链表中的节点](./algorithms_practice/237.删除链表中的节点.py)
+- [709.  转换成小写字母](./algorithms_practice/709.转换成小写字母.py)
 
 ## Array and String  数组和字符串
 - [数组和字符串基础知识概览](./Array_String/Array_String_overview.md)
