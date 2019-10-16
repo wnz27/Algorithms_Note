@@ -30,3 +30,7 @@
 ## Binary-Tree 二叉树
 - [二叉树基础知识概览](./Binary_Tree/Binary_Tree_overview.md)
 - [前序遍历 -- Binary Tree Preorder Traversal](./Binary_Tree/BinaryTreePreorderTraversal.py)
+
+## 其他学习
+- [双向链表的原理和实践](./other_learn/双向链表的原理和实践.py)
+- [实践FIFO缓存置换算法](./other_learn/实践FIFO缓存置换算法.py)
