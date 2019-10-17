@@ -34,5 +34,5 @@
 ## 其他学习
 - [双向链表的原理和实践](./other_learn/DoubleLinkList.py)
 - [实践FIFO缓存置换算法](./other_learn/实践FIFO缓存置换算法_Cache.py)
-- [实践LRU缓存置换算法_LRUCache](./other_learn/实践LRU缓存置换算法_LRUCache.py)
-- [实践LFU缓存置换算法_LFUCache](./other_learn/实践LFU缓存置换算法_LFUCache.py)
+- [实践LRU缓存置换算法_LRUCache最近最少使用算法](./other_learn/实践LRU缓存置换算法_LRUCache.py)
+- [实践LFU缓存置换算法_LFUCache最不经常使用算法](./other_learn/实践LFU缓存置换算法_LFUCache.py)
