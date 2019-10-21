@@ -1,8 +1,8 @@
 #! -*- encoding=utf-8 -*-
 import threading
 import psutil
-from other_learn.operate_system.task import Task
-from other_learn.operate_system.queue import ThreadSafeQueue
+from .task import Task
+from .queue import ThreadSafeQueue
 
 # 实现任务处理线程
 class ProcessThread(threading.Thread):

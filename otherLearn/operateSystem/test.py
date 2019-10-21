@@ -1,8 +1,8 @@
 #! -*- encoding=utf-8 -*-
 import time
 
-from other_learn.operate_system.task import Task
-from other_learn.operate_system.pool import ThreadPool
+from .task import Task
+from .pool import ThreadPool
 
 # 定义一些任务
 class SimpleTask(Task):
