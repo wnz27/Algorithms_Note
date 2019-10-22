@@ -39,5 +39,5 @@
 - [一些基础知识](./otherLearn/operateSystem/someBaseKnowledge.md)
 - [线程安全的队列](./otherLearn/operateSystem/queue.py)
 - [基本任务对象Task](./otherLearn/operateSystem/task.py)
-- [实现任务处理线程以及线程池](./otherLearn/operateSystem/pool.py)
-- [编写测试用例](./otherLearn/operateSystem/test.py)
+- [实现任务处理线程以及线程池](./otherLearn/pool.py)
+- [编写测试用例](./otherLearn/test.py)

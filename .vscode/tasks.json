@@ -9,7 +9,7 @@
             "args": [
                 "${file}"
             ],
-            "command": "Python3",
+            "command": "Python3.6",
             "group": {
                 "kind": "build",
                 "isDefault": true

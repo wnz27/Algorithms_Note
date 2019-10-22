@@ -1,8 +1,8 @@
 #! -*- encoding=utf-8 -*-
 import threading
 import psutil
-from .task import Task
-from .queue import ThreadSafeQueue
+from operateSystem.task import Task
+from operateSystem.queue import ThreadSafeQueue
 
 # 实现任务处理线程
 class ProcessThread(threading.Thread):
@@ -25,7 +25,7 @@ class ProcessThread(threading.Thread):
             if not isinstance(task, Task):
                 continue
             # 执行task实际逻辑（是通过函数调用引进来的）
-            result = task.callable(task.func, *task.args, **task.kwargs)
+            result = task.callable(*task.args, **task.kwargs)
     
     def dismiss(self):
         self.dismiss_flag.set()
@@ -50,7 +50,7 @@ class ThreadPool:
     def start(self):
         for i in range(self.pool.size()):
             thread = self.pool.get(i)
-            thread.run()   # 有疑问
+            thread.start()   # 有疑问
     
     # 停止线程池方法!!!!!!!
     def join(self):
