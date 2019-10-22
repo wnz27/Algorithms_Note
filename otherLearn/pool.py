@@ -1,7 +1,7 @@
 #! -*- encoding=utf-8 -*-
 import threading
 import psutil
-from operateSystem.task import Task
+from operateSystem.task import Task, AsyncTask
 from operateSystem.queue import ThreadSafeQueue
 
 # 实现任务处理线程
@@ -26,6 +26,8 @@ class ProcessThread(threading.Thread):
                 continue
             # 执行task实际逻辑（是通过函数调用引进来的）
             result = task.callable(*task.args, **task.kwargs)
+            if isinstance(task, AsyncTask):
+                task.set_result(result)
     
     def dismiss(self):
         self.dismiss_flag.set()
