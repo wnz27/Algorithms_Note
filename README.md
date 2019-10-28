@@ -41,3 +41,6 @@
 - [基本任务对象Task](./otherLearn/operateSystem/task.py)
 - [实现任务处理线程以及线程池](./otherLearn/pool.py)
 - [编写测试用例](./otherLearn/test.py)
+
+## JS算法学习
+- []()
