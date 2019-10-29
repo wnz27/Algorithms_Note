@@ -42,5 +42,5 @@
 - [实现任务处理线程以及线程池](./otherLearn/pool.py)
 - [编写测试用例](./otherLearn/test.py)
 
-## JS算法学习
-- []()
+## [JS算法学习](./JS算法学习/readme.md)
+- [单词字符串反转](./JS算法学习/leetcode/code/string/stringReverse.js)
