@@ -44,3 +44,5 @@
 
 ## [JS算法学习](./JS算法学习/readme.md)
 - [单词字符串反转](./JS算法学习/leetcode/code/string/stringReverse.js)
+- [二进制字符串子串]](./JS算法学习/leetcode/code/string/subBinaryStr.js)
+- [电话号码的组合]()
