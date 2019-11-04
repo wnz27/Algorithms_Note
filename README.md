@@ -43,6 +43,13 @@
 - [编写测试用例](./otherLearn/test.py)
 
 ## [JS算法学习](./JS算法学习/readme.md)
-- [单词字符串反转](./JS算法学习/leetcode/code/string/stringReverse.js)
-- [二进制字符串子串]](./JS算法学习/leetcode/code/string/subBinaryStr.js)
-- [电话号码的组合]()
+- 字符串类
+    - [单词字符串反转](./JS算法学习/leetcode/code/string/stringReverse.js)
+    - [二进制字符串子串]](./JS算法学习/leetcode/code/string/subBinaryStr.js)
+- 数组类
+    - [电话号码的组合](./JS算法学习/leetcode/code/array/phoneNumber.js)
+    - [卡牌分组](./JS算法学习/leetcode/code/array/cardGroup.js)
+    - [种花问题](./JS算法学习/leetcode/code/array/flower.js)
+    - [格雷编码](./JS算法学习/leetcode/code/array/grayCode.js)
+- 正则类
+    - [重复的子串]](./JS算法学习/leetcode/code/RegExp/repeatSubStr.js)
