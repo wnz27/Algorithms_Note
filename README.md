@@ -41,6 +41,8 @@
 - [基本任务对象Task](./otherLearn/operateSystem/task.py)
 - [实现任务处理线程以及线程池](./otherLearn/pool.py)
 - [编写测试用例](./otherLearn/test.py)
+- [搭建服务基本框架](./otherLearn/computer_network/server.py)
+- [pyhton操作字节序列](./otherLearn/bytes_test.py)
 
 ## [JS算法学习](./JS算法学习/readme.md)
 - 字符串类
