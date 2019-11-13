@@ -27,8 +27,14 @@ print(iii)
 print(testi)
 '''
 
-a = "9001 discuss.leetcode.com"
-print(a.split(" ",2))
+# a = "9001 discuss.leetcode.com"
+# print(a.split(" ",2))
+# print(a)
+
+a = [1,1,2,4,5,5]
+print(a.index(max(a)))
+a.pop(0)
+a.pop(0)
 print(a)
 
 
