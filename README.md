@@ -56,3 +56,5 @@
     - [格雷编码](./JS算法学习/leetcode/code/array/grayCode.js)
 - 正则类
     - [重复的子串]](./JS算法学习/leetcode/code/RegExp/repeatSubStr.js)
+- 排序类
+    - [冒泡排序](./JS算法学习/leetcode/code/sort/bubble.js)
