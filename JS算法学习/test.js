@@ -1,35 +1,91 @@
-function maxLen (nums) {
-  let max = 0
+function lackFirst (nums) {
   let len = nums.length
-  if (nums.length < 2) {
-    return 0
-  } else {
-    for (let i = len - 1; i > 0; i--) {
-      for (let j = 0, temp; j < i; j++) {
-        if (nums[j] > nums[j + 1]) {
-          temp = nums[j]
-          nums[j] = nums[j + 1]
-          nums[j + 1] = temp
+  if (len === 1) {
+    if (nums[0] > 1 || nums[0] <= 0) {
+      return 1
+    } else {
+      return 2
+    }
+  }
+  for (let i = 0; i < len; i++) {
+    let min = nums[i]
+    let index = i
+    for (let j = i + 1; j < len; j++) {
+      if (nums[j] < min) {
+        min = nums[j]
+        index = j
+      }
+    }
+    nums[index] = nums[i]
+    nums[i] = min
+    console.log(nums)
+    if (i === 0){ // 起始边界处理
+      if (nums[i] > 1) {
+        return 1
+      } else {
+        continue
+      }
+    } else if (i >= 1) {
+      if (nums[i] <= 0) {
+        continue
+      } else if (nums[i] > 0 && nums[i - 1] <= 0) {
+        if (nums[i] > 1) {
+          return 1
+        } else {
+          continue
+        }
+      } else {
+        if (nums[i] - nums[i - 1] > 1) {
+          return nums[i - 1] + 1
+        } else {
+          if (i === len - 1) {  // 结尾边界处理
+            return nums[i] + 1
+          } else {
+            continue
+          }
         }
       }
-      console.log(nums)
-      if (i < len - 1) {
-        let dif = Math.abs(nums[i + 1] - nums[i])
-        if (dif > max) {
-          max = dif
-        }
-      }
-      console.log(max)
     }
-    let dif = Math.abs(nums[1] - nums[0])
-    if (dif > max) {
-      max = dif
-    }
-    console.log(max)
-    return max
   }
 }
-maxLen([5,6,9,1])
+console.log(lackFirst([1,2,0]))
+console.log('******************************')
+console.log(lackFirst([3,4,-1,1]))
+console.log('******************************')
+console.log(lackFirst([7,8,9,11,12]))
+
+// function maxLen (nums) {
+//   let max = 0
+//   let len = nums.length
+//   if (nums.length < 2) {
+//     return 0
+//   } else {
+//     for (let i = len - 1; i > 0; i--) {
+//       for (let j = 0, temp; j < i; j++) {
+//         if (nums[j] > nums[j + 1]) {
+//           temp = nums[j]
+//           nums[j] = nums[j + 1]
+//           nums[j + 1] = temp
+//         }
+//       }
+//       console.log(nums)
+//       if (i < len - 1) {
+//         let dif = Math.abs(nums[i + 1] - nums[i])
+//         if (dif > max) {
+//           max = dif
+//         }
+//       }
+//       console.log(max)
+//     }
+//     let dif = Math.abs(nums[1] - nums[0])
+//     if (dif > max) {
+//       max = dif
+//     }
+//     console.log(max)
+//     return max
+//   }
+// }
+// maxLen([5,6,9,1])
 
 // a = 'abababab'
 // b = a.split('ab')
