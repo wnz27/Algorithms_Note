@@ -1,5 +1,9 @@
 function lackFirst (nums) {
   let len = nums.length
+  // 特殊情况处理
+  if (len === 0) { // 数组为空时
+    return 1
+  }
   if (len === 1) {
     if (nums[0] > 1 || nums[0] <= 0) {
       return 1
@@ -19,26 +23,32 @@ function lackFirst (nums) {
     nums[index] = nums[i]
     nums[i] = min
     console.log(nums)
-    if (i === 0){ // 起始边界处理
+    if (i === 0) { // 起始边界处理
       if (nums[i] > 1) {
         return 1
       } else {
         continue
       }
-    } else if (i >= 1) {
+    } else if (i >= 1) { // 中间处理
       if (nums[i] <= 0) {
-        continue
-      } else if (nums[i] > 0 && nums[i - 1] <= 0) {
-        if (nums[i] > 1) {
+        if (i === len - 1) { // 结尾边界处理
           return 1
         } else {
           continue
         }
-      } else {
+      } else if (nums[i] === 1) {
+        if (i === len - 1) { // 结尾边界处理
+          return 2
+        } else {
+          continue
+        }
+      } else if (nums[i] > 1 && nums[i - 1] <= 0) {
+        return 1
+      } else if (nums[i] > 1 && nums[i - 1] > 0) {
         if (nums[i] - nums[i - 1] > 1) {
           return nums[i - 1] + 1
         } else {
-          if (i === len - 1) {  // 结尾边界处理
+          if (i === len - 1) { // 结尾边界处理
             return nums[i] + 1
           } else {
             continue
@@ -48,11 +58,16 @@ function lackFirst (nums) {
     }
   }
 }
-console.log(lackFirst([1,2,0]))
+console.log(lackFirst([1000,-1]))
 console.log('******************************')
-console.log(lackFirst([3,4,-1,1]))
+console.log(lackFirst([-1,-2]))
 console.log('******************************')
-console.log(lackFirst([7,8,9,11,12]))
+console.log(lackFirst([1, 2, 3, 4, 5, 5, 6, 7, 8]))
+console.log('******************************')
+console.log(lackFirst([1, 2, 0]))
+console.log('******************************')
+console.log(lackFirst([1, 1]))
+
 
 // function maxLen (nums) {
 //   let max = 0

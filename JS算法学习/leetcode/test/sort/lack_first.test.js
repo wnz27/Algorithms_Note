@@ -5,4 +5,8 @@ test('数组中的第K个最大元素', () => {
   expect(lackFirst([3, 4, -1, 1])).toEqual(2)
   expect(lackFirst([7, 8, 9, 11, 12])).toEqual(1)
   expect(lackFirst([1, 2, 3, 4, 5, 5, 6, 7, 8])).toEqual(9)
+  expect(lackFirst([])).toEqual(1)
+  expect(lackFirst([-1, -2])).toEqual(1)
+  expect(lackFirst([10000, -2])).toEqual(1)
+  expect(lackFirst([1, 1])).toEqual(2)
 })
