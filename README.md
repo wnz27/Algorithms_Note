@@ -58,3 +58,8 @@
     - [重复的子串]](./JS算法学习/leetcode/code/RegExp/repeatSubStr.js)
 - 排序类
     - [冒泡排序](./JS算法学习/leetcode/code/sort/bubble.js)
+    - [选择排序](./JS算法学习/leetcode/code/sort/select.js)
+    - [奇偶排序](./JS算法学习/leetcode/code/sort/odd_even.js)
+    - [第k个最大值](./JS算法学习/leetcode/code/sort/max_k.js)
+    - [最大区间](./JS算法学习/leetcode/code/sort/max_len.js)
+    - [缺失的第一个正数](./JS算法学习/leetcode/code/sort/lack_first.js)
