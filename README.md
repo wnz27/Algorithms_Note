@@ -1,4 +1,5 @@
-# Algorithms_Note
+# 算法基础知识学习笔记
+- [数据结构与算法概览](./AlgorithmsBasicKnowledgeNote/数据结构与算法概览.md)
 
 # leetcode(Python 实现)
 ## Algorithms_Practice
@@ -20,6 +21,7 @@
 - [709.  转换成小写字母](./algorithms_practice/709.转换成小写字母.py)
 - [724.  寻找数组的中心索引](./algorithms_practice/724.寻找数组的中心索引.py)
 - [747. 至少是其他数字两倍的最大数](./algorithms_practice/747. 至少是其他数字两倍的最大数.py)
+- [循环队列设计，数组实现，线程不安全](./Queue_Stack/Queue_Stack_overview.md)
 
 ## Array and String  数组和字符串
 - [数组和字符串基础知识概览](./Array_String/Array_String_overview.md)
@@ -32,7 +34,7 @@
 - [二叉树基础知识概览](./Binary_Tree/Binary_Tree_overview.md)
 - [前序遍历 -- Binary Tree Preorder Traversal](./Binary_Tree/BinaryTreePreorderTraversal.py)
 
-## 其他学习
+# 其他学习
 - [双向链表的原理和实践](./otherLearn/DoubleLinkList.py)
 - [实践FIFO缓存置换算法](./otherLearn/实践FIFO缓存置换算法_Cache.py)
 - [实践LRU缓存置换算法_LRUCache最近最少使用算法](./otherLearn/实践LRU缓存置换算法_LRUCache.py)
@@ -45,7 +47,7 @@
 - [搭建服务基本框架](./otherLearn/computer_network/server.py)
 - [pyhton操作字节序列](./otherLearn/bytes_test.py)
 
-## [JS算法学习](./JS算法学习/readme.md)
+# [JS算法学习](./JS算法学习/readme.md)
 - 字符串类
     - [单词字符串反转](./JS算法学习/leetcode/code/string/stringReverse.js)
     - [二进制字符串子串]](./JS算法学习/leetcode/code/string/subBinaryStr.js)
