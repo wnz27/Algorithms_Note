@@ -44,8 +44,8 @@ class DoubleLinkedList:
             self.tail.next = None
             self.tail.prev = None
         else:
-            self.tail.next = node
             node.prev = self.tail
+            self.tail.next = node
             self.tail = node
             self.tail.next = None
         self.size += 1
