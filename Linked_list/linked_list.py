@@ -1,4 +1,5 @@
 #! -*- encoding=utf-8 -*-
+# 双向链表
 class MyNode(object):
     def __init__(self, value):
         self.val = value
@@ -17,7 +18,6 @@ class MyLinkedList(object):
         """
         Initialize your data structure here.
         """
-        self.capacity = 5
         self.size = 0
         self.head = None
         self.tail = None
@@ -29,7 +29,7 @@ class MyLinkedList(object):
         :type index: int
         :rtype: int
         """
-        if index >= self.capacity:
+        if index >= self.size:
             return -1
         else:
             cur = self.head
@@ -81,30 +81,56 @@ class MyLinkedList(object):
         :rtype: None
         """
         node = MyNode(val)
-        if index <= 0:
+        if index <= 0:  # index为负，在头部添加
             self.addAtHead(val)
-        elif index == self.capacity:
+        elif index == self.size:    # index跟链表大小一样，在尾部添加
             self.addAtTail(val)
-        elif index > self.capacity:
+        elif index > self.size-1:   # index超出链表，不添加
             return
-        else:
-            cur = self.head
+        else:                       # 其他正常情况， 中间插入
+            cur = self.head         
             for i in range(0, index):
-                cur = cur.next
-            node.prev = cur.prev
-            cur.prev.next = node
+                cur = cur.next      # 找到当前index的节点
+            node.prev = cur.prev    # 往cur前插入
             node.next = cur
+            cur.prev.next = node
             cur.prev = node
             self.size += 1
 
-    def deleteAtIndex(self, index):
+    def deleteAtIndex(self, index): # 这个其实可以再拆分方法出来，像下面这样写一个方法就很长，不美观
         """
         Delete the index-th node in the linked list, if the index is valid.
         :type index: int
         :rtype: None
         """
-        pass
-    
+        if self.size == 0:      # 链表是否为空，为空直接返回
+            return
+        else:                   # 链表不为空
+            if (index >= self.size) or (index < 0):  # 无效index，直接返回
+                return
+            else:                   # 有效index
+                if index == 0:      # 边界处理，删除节点为第一个时
+                    if self.head.next:  # 如果有下一个节点
+                        self.head = self.head.next
+                        self.head.prev = None
+                    else:               # 没有下一个节点
+                        self.tail = self.head = None
+                    self.size -= 1
+                elif index == self.size-1:   # 边界处理，删除节点为倒数第一个时
+                    if self.tail.prev:  # 如果有上一个节点
+                        self.tail = self.tail.prev
+                        self.tail.next = None
+                    else:               # 没有上一个节点
+                        self.tail = self.head = None
+                    self.size -= 1
+                else:                   # 不在第一个和最后一个节点的情况
+                    cur = self.head         
+                    for i in range(0, index):
+                        cur = cur.next      # 找到当前index的节点
+                    cur.prev.next = cur.next
+                    cur.next.prev = cur.prev
+                    self.size -= 1
+                
     # 打印当前链表
     def print(self):
         p = self.head
@@ -116,15 +142,44 @@ class MyLinkedList(object):
                 line += "=>"
         print (line)
 
-
 # Your MyLinkedList object will be instantiated and called as such:
 obj = MyLinkedList()
 # param_1 = obj.get()
-obj.addAtHead(1)
-obj.addAtTail(3)
-obj.addAtIndex(1,2)
+obj.addAtHead(7)
 obj.print()
-print(obj.get(1))
-obj.deleteAtIndex(1)
+obj.addAtTail(7)
 obj.print()
-print(obj.get(1))
+obj.addAtHead(9)
+obj.print()
+obj.addAtTail(8)
+obj.print()
+obj.addAtHead(6)
+obj.print()
+obj.addAtHead(0)
+obj.print()
+print(obj.get(5))
+obj.addAtHead(0)
+print(obj.get(2))
+print(obj.get(5))
+obj.addAtTail(4)
+obj.print()
+
+# obj.print()
+# print(obj.get(1))
+# obj.deleteAtIndex(1)
+# obj.print()
+# print(obj.get(1))
+# obj.addAtIndex(0,2)
+# obj.print()
+# obj.addAtIndex(2,9)
+# obj.print()
+# obj.deleteAtIndex(0)
+# obj.print()
+# obj.deleteAtIndex(2)
+# obj.print()
+# obj.deleteAtIndex(1)
+# obj.print()
+# print("*******{}".format(obj.size))
+# obj.deleteAtIndex(1)
+# obj.print()
+# print(obj.get(1))
