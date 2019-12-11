@@ -51,14 +51,14 @@
 # [JS算法学习](./JS算法学习/readme.md)
 - 字符串类
     - [单词字符串反转](./JS算法学习/leetcode/code/string/stringReverse.js)
-    - [二进制字符串子串]](./JS算法学习/leetcode/code/string/subBinaryStr.js)
+    - [二进制字符串子串](./JS算法学习/leetcode/code/string/subBinaryStr.js)
 - 数组类
     - [电话号码的组合](./JS算法学习/leetcode/code/array/phoneNumber.js)
     - [卡牌分组](./JS算法学习/leetcode/code/array/cardGroup.js)
     - [种花问题](./JS算法学习/leetcode/code/array/flower.js)
     - [格雷编码](./JS算法学习/leetcode/code/array/grayCode.js)
 - 正则类
-    - [重复的子串]](./JS算法学习/leetcode/code/RegExp/repeatSubStr.js)
+    - [重复的子串](./JS算法学习/leetcode/code/RegExp/repeatSubStr.js)
 - 排序类
     - [冒泡排序](./JS算法学习/leetcode/code/sort/bubble.js)
     - [选择排序](./JS算法学习/leetcode/code/sort/select.js)
