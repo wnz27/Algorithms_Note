@@ -21,7 +21,7 @@
 - [237.  删除链表中的节点](./algorithms_practice/237.删除链表中的节点.py)
 - [709.  转换成小写字母](./algorithms_practice/709.转换成小写字母.py)
 - [724.  寻找数组的中心索引](./algorithms_practice/724.寻找数组的中心索引.py)
-- [747. 至少是其他数字两倍的最大数](./algorithms_practice/747. 至少是其他数字两倍的最大数.py)
+- [747. 至少是其他数字两倍的最大数](./algorithms_practice/747.至少是其他数字两倍的最大数.py)
 - [循环队列设计，数组实现，线程不安全](./Queue_Stack/Queue_Stack_overview.md)
 
 ## Array and String  数组和字符串
