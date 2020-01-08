@@ -24,6 +24,10 @@
 - [747. 至少是其他数字两倍的最大数](./algorithms_practice/747.至少是其他数字两倍的最大数.py)
 - [循环队列设计，数组实现，线程不安全](./Queue_Stack/Queue_Stack_overview.md)
 
+## 常用算法【简单解析】，python实现
+- [快速排序](./常用算法简单解析python实现/quicksort.py)
+- [归并排序]()
+
 ## Array and String  数组和字符串
 - [数组和字符串基础知识概览](./Array_String/Array_String_overview.md)
 
@@ -35,7 +39,7 @@
 - [二叉树基础知识概览](./Binary_Tree/Binary_Tree_overview.md)
 - [前序遍历 -- Binary Tree Preorder Traversal](./Binary_Tree/BinaryTreePreorderTraversal.py)
 
-# 其他学习
+# 其他学习（视频课跟练笔记）
 - [双向链表的原理和实践](./otherLearn/DoubleLinkList.py)
 - [实践FIFO缓存置换算法](./otherLearn/实践FIFO缓存置换算法_Cache.py)
 - [实践LRU缓存置换算法_LRUCache最近最少使用算法](./otherLearn/实践LRU缓存置换算法_LRUCache.py)
