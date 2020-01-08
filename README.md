@@ -2,6 +2,10 @@
 - [数据结构与算法概览](./AlgorithmsBasicKnowledgeNote/数据结构与算法概览.md)
 - [复杂度分析及大O由来]()
 
+# 常用算法【简单解析】，python实现
+- [快速排序](./常用算法简单解析python实现/quicksort.py)
+- [归并排序](./常用算法简单解析python实现/mergesort.py)
+
 # leetcode(Python 实现)
 ## Algorithms_Practice
 - [771. Jewels and Stones  easy](./algorithms_practice/771.JewelsandStones.py)
@@ -24,9 +28,8 @@
 - [747. 至少是其他数字两倍的最大数](./algorithms_practice/747.至少是其他数字两倍的最大数.py)
 - [循环队列设计，数组实现，线程不安全](./Queue_Stack/Queue_Stack_overview.md)
 
-## 常用算法【简单解析】，python实现
-- [快速排序](./常用算法简单解析python实现/quicksort.py)
-- [归并排序]()
+## 数据库算法
+- [数据库算法习题记录](./数据库LeetCode算法题/数据库算法习题.md)
 
 ## Array and String  数组和字符串
 - [数组和字符串基础知识概览](./Array_String/Array_String_overview.md)
