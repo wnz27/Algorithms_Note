@@ -37,4 +37,6 @@ a.pop(0)
 a.pop(0)
 print(a)
 
-
+b = [1,2,3,4,5,6,7,8]
+c = b[:5]
+print(id(b), id(c))

@@ -3,8 +3,11 @@
 - [复杂度分析及大O由来]()
 
 # 常用算法【简单解析】，python实现
+> 可以用pip安装pytest包来进行测试，会自动运行py文件里的以test开头的函数
 - [快速排序](./常用算法简单解析python实现/quicksort.py)
 - [归并排序](./常用算法简单解析python实现/mergesort.py)
+- [堆排序](./常用算法简单解析python实现/heapsort.py)
+- [二分查找](./常用算法简单解析python实现/binarySearch.py)
 
 # leetcode(Python 实现)
 ## Algorithms_Practice
@@ -55,21 +58,21 @@
 - [搭建服务基本框架](./otherLearn/computer_network/server.py)
 - [pyhton操作字节序列](./otherLearn/bytes_test.py)
 
-# [JS算法学习](./JS算法学习/readme.md)
+# [JS算法学习------基于jest测试](./JS算法学习/readme.md)
 - 字符串类
-    - [单词字符串反转](./JS算法学习/leetcode/code/string/stringReverse.js)
-    - [二进制字符串子串](./JS算法学习/leetcode/code/string/subBinaryStr.js)
+    - [单词字符串反转](./JS算法学习/leetcode/code/string/stringReverse.js)------[测试](./JS算法学习/leetcode/test/string/stringReverse.test.js)
+    - [二进制字符串子串](./JS算法学习/leetcode/code/string/subBinaryStr.js)------[测试](./JS算法学习/leetcode/test/string/subBinaryStr.test.js)
 - 数组类
-    - [电话号码的组合](./JS算法学习/leetcode/code/array/phoneNumber.js)
-    - [卡牌分组](./JS算法学习/leetcode/code/array/cardGroup.js)
-    - [种花问题](./JS算法学习/leetcode/code/array/flower.js)
-    - [格雷编码](./JS算法学习/leetcode/code/array/grayCode.js)
+    - [电话号码的组合](./JS算法学习/leetcode/code/array/phoneNumber.js)------[测试](./JS算法学习/leetcode/test/array/phoneNumber.test.js)
+    - [卡牌分组](./JS算法学习/leetcode/code/array/cardGroup.js)------[测试](./JS算法学习/leetcode/test/array/cardGroup.test.js)
+    - [种花问题](./JS算法学习/leetcode/code/array/flower.js)------[测试](./JS算法学习/leetcode/test/array/flower.test.js)
+    - [格雷编码](./JS算法学习/leetcode/code/array/grayCode.js)------[测试](./JS算法学习/leetcode/test/array/grayCode.test.js)
 - 正则类
-    - [重复的子串](./JS算法学习/leetcode/code/RegExp/repeatSubStr.js)
+    - [重复的子串](./JS算法学习/leetcode/code/RegExp/repeatSubStr.js)------[测试](./JS算法学习/leetcode/test/RegExp/repeatSubStr.test.js)
 - 排序类
-    - [冒泡排序](./JS算法学习/leetcode/code/sort/bubble.js)
-    - [选择排序](./JS算法学习/leetcode/code/sort/select.js)
-    - [奇偶排序](./JS算法学习/leetcode/code/sort/odd_even.js)
-    - [第k个最大值](./JS算法学习/leetcode/code/sort/max_k.js)
-    - [最大区间](./JS算法学习/leetcode/code/sort/max_len.js)
-    - [缺失的第一个正数](./JS算法学习/leetcode/code/sort/lack_first.js)
+    - [冒泡排序](./JS算法学习/leetcode/code/sort/bubble.js)------[测试](./JS算法学习/leetcode/test/sort/bubble.test.js)
+    - [选择排序](./JS算法学习/leetcode/code/sort/select.js)------[测试](./JS算法学习/leetcode/test/sort/select.test.js)
+    - [奇偶排序](./JS算法学习/leetcode/code/sort/odd_even.js)------[测试](./JS算法学习/leetcode/test/sort/odd_even.test.js)
+    - [第k个最大值](./JS算法学习/leetcode/code/sort/max_k.js)------[测试](./JS算法学习/leetcode/test/sort/max_k.test.js)
+    - [最大区间](./JS算法学习/leetcode/code/sort/max_len.js)------[测试](./JS算法学习/leetcode/test/sort/max_len.test.js)
+    - [缺失的第一个正数](./JS算法学习/leetcode/code/sort/lack_first.js)------[测试](./JS算法学习/leetcode/test/sort/lack_first.test.js)
