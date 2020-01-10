@@ -30,6 +30,8 @@
 - [724.  寻找数组的中心索引](./algorithms_practice/724.寻找数组的中心索引.py)
 - [747. 至少是其他数字两倍的最大数](./algorithms_practice/747.至少是其他数字两倍的最大数.py)
 - [循环队列设计，数组实现，线程不安全](./Queue_Stack/Queue_Stack_overview.md)
+- [206.  反转链表](./algorithms_practice/206.反转链表.py)
+- [92.   反转链表||](./algorithms_practice/92.反转链表||.py)
 
 ## 数据库算法
 - [数据库算法习题记录](./数据库LeetCode算法题/数据库算法习题.md)
