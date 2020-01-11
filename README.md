@@ -4,10 +4,20 @@
 
 # 常用算法【简单解析】，python实现
 > 可以用pip安装pytest包来进行测试，会自动运行py文件里的以test开头的函数
-- [快速排序](./常用算法简单解析python实现/quicksort.py)
-- [归并排序](./常用算法简单解析python实现/mergesort.py)
-- [堆排序](./常用算法简单解析python实现/heapsort.py)
-- [二分查找](./常用算法简单解析python实现/binarySearch.py)
+- [快速排序](./常用算法与数据结构简单解析python实现/常用算法pyhton实现/quicksort.py)
+- [归并排序](./常用算法与数据结构简单解析python实现/常用算法pyhton实现/mergesort.py)
+- [堆排序](./常用算法与数据结构简单解析python实现/常用算法pyhton实现/heapsort.py)
+- [二分查找](./常用算法与数据结构简单解析python实现/常用算法pyhton实现/binarySearch.py)
+
+# 常用数据结构【简单解析】，python实现
+#### 链表
+- [【基础】](./常用算法与数据结构简单解析python实现/常用数据结构python实现/linked/linked.py)
+#### 队列
+- [【基础队列】](./常用算法与数据结构简单解析python实现/常用数据结构python实现/queue/queue.py)
+- [【基础栈】](./常用算法与数据结构简单解析python实现/常用数据结构python实现/queue/stack.py)
+- [【综合】](./常用算法与数据结构简单解析python实现/常用数据结构python实现/queue/synthesize.py)
+#### 字典和集合
+- [【基础】](./常用算法与数据结构简单解析python实现/常用数据结构python实现/distAndSet/distAndset.py)
 
 # leetcode(Python 实现)
 ## Algorithms_Practice
