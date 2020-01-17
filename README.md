@@ -19,6 +19,9 @@
 #### 字典和集合
 - [【基础】](./常用算法与数据结构简单解析python实现/常用数据结构python实现/distAndSet/distAndset.py)
 
+## 动态规划相关问题
+- [斐波那契相关问题](./动态规划相关学习/fibonnaci.py)
+
 # leetcode(Python 实现)
 ## Algorithms_Practice
 - [771. Jewels and Stones  easy](./algorithms_practice/771.JewelsandStones.py)
