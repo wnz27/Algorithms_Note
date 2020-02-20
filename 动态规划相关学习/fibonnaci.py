@@ -58,13 +58,13 @@ test_fib()
 '''
 def fib_generate(n):
     a, b = 0, 1
-    for i in range(n):
+    for _ in range(n):
         a, b = b, a + b
     return a
 # 等价方法
 def fib_ge(n):
     a, b = 1, 0
-    for i in range(n):
+    for _ in range(n):
         a, b = b, a + b
     return b
 # print(fib_generate(0))
