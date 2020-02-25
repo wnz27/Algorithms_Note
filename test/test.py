@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-02-26 01:52:54
+@LastEditTime: 2020-02-26 01:55:02
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -39,21 +39,16 @@ print("*"*80)
 column += (row == N - 1)
 print(column)
 def findDiagonalOrder(matrix):
-    
     # Check for empty matrices
     if not matrix or not matrix[0]:
         return []
-    
     # Variables to track the size of the matrix
     N, M = len(matrix), len(matrix[0])
-    
     # The two arrays as explained in the algorithm
     result, intermediate = [], []
-    
     # We have to go over all the elements in the first
     # row and the last column to cover all possible diagonals
-    for d in range(N + M - 1):
-        
+    for d in range(N + M - 1):   
         # Clear the intermediate array everytime we start
         # to process another diagonal
         intermediate.clear()
