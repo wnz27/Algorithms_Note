@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-02-26 01:55:02
+@LastEditTime: 2020-02-29 00:28:12
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -75,3 +75,53 @@ def findDiagonalOrder(matrix):
             result.extend(intermediate)
     return result        
 
+print("*"*80)
+
+print(list("11223"))
+print(int('0'), int('1'))
+print(('10001000'+'1')[::-1])
+
+def twoSum(nums, target):
+    dict = {}
+    for i in range(len(nums)):
+        m = nums[i]
+        if (target - m) in dict:
+            return (dict[target - m], i)
+        else:
+            dict[m] = i
+
+print(twoSum([5,7,3,10,4], 11))
+print("2", 10 * ' ', "2")
+
+len_1 = min(['12','244','3555','46'], key=lambda x: len(x))
+print(len_1)
+
+
+print([1,2,3].pop())
+print('adf adfa adf '.split())
+a = {}
+a.setdefault(1, 'nont')
+a.setdefault(1, 'aaaaa')
+print(a)
+
+a = [1,0,5]
+a.sort()
+print(a)
+
+for i in {1:2, 1:3, 5:6}:
+    print(i)
+
+print("*".join("adfa adsff asdf ".split()))
+import collections
+a = collections.defaultdict(int)
+print(a)
+print(max(a['123'], 2))
+print("*" * 80)
+b = {1:10,2:30}
+key = max(b , key= lambda x: b[x])
+print(key, b[key])
+
+print([2,1,1,2][1::2])
+print([2,1,1,2][:4:2])
+
+print([2] * 10)
