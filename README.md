@@ -2,13 +2,16 @@
  * @Author: 27
  * @LastEditors: 27
  * @Date: 2019-10-29 17:34:27
- * @LastEditTime: 2020-02-25 11:32:51
+ * @LastEditTime: 2020-03-01 17:44:30
  * @FilePath: /Algorithms_Note/README.md
  * @description: type some description
  -->
 # 算法基础知识学习笔记
 - [数据结构与算法概览](./AlgorithmsBasicKnowledgeNote/数据结构与算法概览.md)
 - [复杂度分析及大O由来]()
+
+## 数据结构与算法基础学习
+-[数据结构与算法基础巩固](./数据结构与算法基础学习/learn_datastructure_algorithm.md)
 
 # 常用算法【简单解析】，python实现
 > 可以用pip安装pytest包来进行测试，会自动运行py文件里的以test开头的函数
@@ -53,6 +56,9 @@
 - [循环队列设计，数组实现，线程不安全](./Queue_Stack/Queue_Stack_overview.md)
 - [206.  反转链表](./algorithms_practice/206.反转链表.py)
 - [92.   反转链表||](./algorithms_practice/92.反转链表||.py)
+- [MaxConsecutiveOnes](./algorithms_practice/MaxConsecutiveOnes.py)
+- [225.用队列实现栈](./algorithms_practice/225.用队列实现栈.py)
+- [MinimumSizeSubarraySum](./algorithms_practice/MinimumSizeSubarraySum.py)
 
 ## Array and String  数组和字符串
 - [数组和字符串基础知识概览](./Array_String/Array_String_overview.md)

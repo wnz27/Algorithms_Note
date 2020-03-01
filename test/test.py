@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-02-29 00:28:12
+@LastEditTime: 2020-03-01 17:44:58
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -108,7 +108,7 @@ a = [1,0,5]
 a.sort()
 print(a)
 
-for i in {1:2, 1:3, 5:6}:
+for i in {1:2, 5:6}:
     print(i)
 
 print("*".join("adfa adsff asdf ".split()))
@@ -125,3 +125,25 @@ print([2,1,1,2][1::2])
 print([2,1,1,2][:4:2])
 
 print([2] * 10)
+print([] + ["123"])
+print(["123"] + ["666"])
+
+a = [1,1,1,1,0,0,5]
+print(max(a))
+
+      
+
+a = [(0,5), (6,7)]
+print(max(a, key=lambda x: x[1]-x[0]))
+
+
+print([1,3][1:2])
+
+print(sum([1,2,3,4][:2]))
+
+a = [1,10]
+a.insert(len(a), 90)
+print(a)
+a.reverse()
+print(a)
+
