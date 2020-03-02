@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-01 16:29:35
-@LastEditTime: 2020-03-01 17:09:36
+@LastEditTime: 2020-03-02 09:45:28
 @FilePath: /Algorithms_Note/algorithms_practice/225.用队列实现栈.py
 @description: type some description
 '''
@@ -13,8 +13,8 @@ class MyStack1(object):
         """
         Initialize your data structure here.
         """
-        self.q1 = []
-        self.q2 = []
+        self.__q1 = []
+        self.__q2 = []
 
 
     def push(self, x):
@@ -23,7 +23,7 @@ class MyStack1(object):
         :type x: int
         :rtype: None
         """
-        self.q1.append(x)
+        self.__q1.append(x)
 
 
     def pop(self):
@@ -31,10 +31,10 @@ class MyStack1(object):
         Removes the element on top of the stack and returns that element.
         :rtype: int
         """
-        while len(self.q1) > 1:
-            self.q2.append(self.q1.pop(0))
-        res = self.q1.pop()
-        self.q1, self.q2 = self.q2, self.q1
+        while len(self.__q1) > 1:
+            self.__q2.append(self.__q1.pop(0))
+        res = self.__q1.pop()
+        self.__q1, self.__q2 = self.__q2, self.__q1
         return res
 
 
@@ -43,8 +43,8 @@ class MyStack1(object):
         Get the top element.
         :rtype: int
         """
-        if len(self.q1) != 0:
-            return self.q1[-1]
+        if len(self.__q1) != 0:
+            return self.__q1[-1]
         else:
             return -1
 
@@ -54,7 +54,7 @@ class MyStack1(object):
         Returns whether the stack is empty.
         :rtype: bool
         """
-        return self.q1 == [] and self.q2 == []
+        return self.__q1 == [] and self.__q2 == []
 
 
 # 方法二，时间复杂度, pushO(n), popO(1)
@@ -111,7 +111,7 @@ class MyStack3(object):
         """
         Initialize your data structure here.
         """
-        self.q = []
+        self.__q = []
 
 
     def push(self, x):
@@ -120,8 +120,7 @@ class MyStack3(object):
         :type x: int
         :rtype: None
         """
-        self.q.insert(0, x)
-        self.q.append(self.q.pop(0))
+        self.__q.append(x)
 
 
     def pop(self):
@@ -129,7 +128,7 @@ class MyStack3(object):
         Removes the element on top of the stack and returns that element.
         :rtype: int
         """
-        return self.q.pop()
+        return self.__q.pop()
         
 
 
@@ -138,13 +137,13 @@ class MyStack3(object):
         Get the top element.
         :rtype: int
         """
-        return self.q[-1]
+        return self.__q[-1]
 
     def empty(self):
         """
         Returns whether the stack is empty.
         :rtype: bool
         """
-        return self.q == []
+        return self.__q == []
 
 

@@ -2,16 +2,17 @@
  * @Author: 27
  * @LastEditors: 27
  * @Date: 2019-10-29 17:34:27
- * @LastEditTime: 2020-03-01 17:44:30
+ * @LastEditTime: 2020-03-02 19:00:23
  * @FilePath: /Algorithms_Note/README.md
- * @description: type some description
+ * @description: 笔记总目录
  -->
 # 算法基础知识学习笔记
 - [数据结构与算法概览](./AlgorithmsBasicKnowledgeNote/数据结构与算法概览.md)
 - [复杂度分析及大O由来]()
+- [常用封底估算]()
 
-## 数据结构与算法基础学习
--[数据结构与算法基础巩固](./数据结构与算法基础学习/learn_datastructure_algorithm.md)
+# 数据结构与算法基础学习
+-[!常用数据结构【简单解析】，python实现](./数据结构与算法基础学习/learn_datastructure_algorithm.md)
 
 # 常用算法【简单解析】，python实现
 > 可以用pip安装pytest包来进行测试，会自动运行py文件里的以test开头的函数
@@ -19,16 +20,6 @@
 - [归并排序](./常用算法与数据结构简单解析python实现/常用算法pyhton实现/mergesort.py)
 - [堆排序](./常用算法与数据结构简单解析python实现/常用算法pyhton实现/heapsort.py)
 - [二分查找](./常用算法与数据结构简单解析python实现/常用算法pyhton实现/binarySearch.py)
-
-# 常用数据结构【简单解析】，python实现
-#### 链表
-- [【基础】](./常用算法与数据结构简单解析python实现/常用数据结构python实现/linked/linked.py)
-#### 队列
-- [【基础队列】](./常用算法与数据结构简单解析python实现/常用数据结构python实现/queue/queue.py)
-- [【基础栈】](./常用算法与数据结构简单解析python实现/常用数据结构python实现/queue/stack.py)
-- [【综合】](./常用算法与数据结构简单解析python实现/常用数据结构python实现/queue/synthesize.py)
-#### 字典和集合
-- [【基础】](./常用算法与数据结构简单解析python实现/常用数据结构python实现/distAndSet/distAndset.py)
 
 ## 动态规划相关问题
 - [斐波那契相关问题](./动态规划相关学习/fibonnaci.py)

@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-01 17:44:58
+@LastEditTime: 2020-03-02 18:28:51
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -147,3 +147,8 @@ print(a)
 a.reverse()
 print(a)
 
+def test(a, b=10):
+    print(a, b)
+
+test(99999)
+test(888,28)
