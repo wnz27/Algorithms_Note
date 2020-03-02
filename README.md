@@ -2,14 +2,14 @@
  * @Author: 27
  * @LastEditors: 27
  * @Date: 2019-10-29 17:34:27
- * @LastEditTime: 2020-03-02 19:00:23
+ * @LastEditTime: 2020-03-02 19:03:02
  * @FilePath: /Algorithms_Note/README.md
  * @description: 笔记总目录
  -->
 # 算法基础知识学习笔记
 - [数据结构与算法概览](./AlgorithmsBasicKnowledgeNote/数据结构与算法概览.md)
-- [复杂度分析及大O由来]()
-- [常用封底估算]()
+- [复杂度分析及大O由来(暂无)]()
+- [常用封底估算](./Algorithms_Note/AlgorithmsBasicKnowledgeNote/常用封底估算.md)
 
 # 数据结构与算法基础学习
 -[!常用数据结构【简单解析】，python实现](./数据结构与算法基础学习/learn_datastructure_algorithm.md)
