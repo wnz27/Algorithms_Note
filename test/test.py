@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-03 08:44:30
+@LastEditTime: 2020-03-04 18:04:34
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -155,3 +155,7 @@ test(888,28)
 
 print('.' in 'adfadf.adfafaf')
 print('adf.rqewr.145234'.split('.'))
+q = collections.deque()
+q.append(1)
+q.append(2)
+print(q)
