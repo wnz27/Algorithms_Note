@@ -2,7 +2,7 @@
  * @Author: 27
  * @LastEditors: 27
  * @Date: 2019-10-29 17:34:27
- * @LastEditTime: 2020-03-02 19:03:02
+ * @LastEditTime: 2020-03-05 09:54:13
  * @FilePath: /Algorithms_Note/README.md
  * @description: 笔记总目录
  -->
@@ -21,6 +21,11 @@
 - [堆排序](./常用算法与数据结构简单解析python实现/常用算法pyhton实现/heapsort.py)
 - [二分查找](./常用算法与数据结构简单解析python实现/常用算法pyhton实现/binarySearch.py)
 
+## 《剑指offer》-- 摘自leetcode
+- [从上到下打印二叉树II     ----    简单](./《剑指offer刷刷刷刷》/从上到下打印二叉树II.py)
+- [和为s的连续正数序列      ----    简单](./《剑指offer刷刷刷刷》/和为s的连续正数序列.py)
+- []()
+
 ## 动态规划相关问题
 - [斐波那契相关问题](./动态规划相关学习/fibonnaci.py)
 
@@ -28,28 +33,40 @@
 ## Algorithms_Practice
 - [771. Jewels and Stones  easy](./algorithms_practice/771.JewelsandStones.py)
 - [804. Unique MorseCode Words  easy](./algorithms_practice/804.UniqueMorseCodeWords.py)
-- [804. 解法2 easy](./algorithms_practice/804.solution2.py)
-- [832. Flipping an Image easy](./algorithms_practice/832.FlippinganImage.py)
-- [461. Hamming Distance easy](./algorithms_practice/461.HammingDistance.py)
-- [657. Judge Route Circle easy](./algorithms_practice/657.JudgeRouteCircle.py)
-- [728. Self Dividing Numbers easy](./algorithms_practice/728.SelfDividingNumbers.py)
-- [561. Array Partition I easy](./algorithms_practice/561.ArrayPartitionIeasy.py)
-- [136. Single Number easy](./algorithms_practice/136.SingleNumbereasy.py)
-- [811. Subdomain Visit Count easy](./algorithms_practice/811.SubdomainVisitCount.py)
-- [929. Unique Email Addresses easy](./algorithms_practice/929.UniqueEmailAddresses.py)
-- [709. To Lower Case easy](./algorithms_practice/709.ToLowerCase.py)
-- [LCP1. 猜数字](./algorithms_practice/LCP1.py)
-- [1108. IP地址无效化](./algorithms_practice/1108.IP地址无效化.py)
-- [237.  删除链表中的节点](./algorithms_practice/237.删除链表中的节点.py)
-- [709.  转换成小写字母](./algorithms_practice/709.转换成小写字母.py)
-- [724.  寻找数组的中心索引](./algorithms_practice/724.寻找数组的中心索引.py)
-- [747. 至少是其他数字两倍的最大数](./algorithms_practice/747.至少是其他数字两倍的最大数.py)
+- [804. 解法2 easy](./algorithms_leetcode/804.solution2.py)
+- [832. Flipping an Image easy](./algorithms_leetcode/832.FlippinganImage.py)
+- [461. Hamming Distance easy](./algorithms_leetcode/461.HammingDistance.py)
+- [657. Judge Route Circle easy](./algorithms_leetcode/657.JudgeRouteCircle.py)
+- [728. Self Dividing Numbers easy](./algorithms_leetcode/728.SelfDividingNumbers.py)
+- [561. Array Partition I easy](./algorithms_leetcode/561.ArrayPartitionIeasy.py)
+- [136. Single Number easy](./algorithms_leetcode/136.SingleNumbereasy.py)
+- [811. Subdomain Visit Count easy](./algorithms_leetcode/811.SubdomainVisitCount.py)
+- [929. Unique Email Addresses easy](./algorithms_leetcode/929.UniqueEmailAddresses.py)
+- [709. To Lower Case easy](./algorithms_leetcode/709.ToLowerCase.py)
+- [LCP1. 猜数字](./algorithms_leetcode/LCP1.py)
+- [1108. IP地址无效化](./algorithms_leetcode/1108.IP地址无效化.py)
+- [237.  删除链表中的节点](./algorithms_leetcode/237.删除链表中的节点.py)
+- [709.  转换成小写字母](./algorithms_leetcode/709.转换成小写字母.py)
+- [724.  寻找数组的中心索引](./algorithms_leetcode/724.寻找数组的中心索引.py)
+- [747. 至少是其他数字两倍的最大数](./algorithms_leetcode/747.至少是其他数字两倍的最大数.py)
 - [循环队列设计，数组实现，线程不安全](./Queue_Stack/Queue_Stack_overview.md)
-- [206.  反转链表](./algorithms_practice/206.反转链表.py)
-- [92.   反转链表||](./algorithms_practice/92.反转链表||.py)
-- [MaxConsecutiveOnes](./algorithms_practice/MaxConsecutiveOnes.py)
-- [225.用队列实现栈](./algorithms_practice/225.用队列实现栈.py)
-- [MinimumSizeSubarraySum](./algorithms_practice/MinimumSizeSubarraySum.py)
+- [206.  反转链表](./algorithms_leetcode/206.反转链表.py)
+- [92.   反转链表||](./algorithms_leetcode/92.反转链表||.py)
+- [MaxConsecutiveOnes](./algorithms_leetcode/MaxConsecutiveOnes.py)
+- [225.用队列实现栈](./algorithms_leetcode/225.用队列实现栈.py)
+- [MinimumSizeSubarraySum](./algorithms_leetcode/MinimumSizeSubarraySum.py)
+- [728.SelfDividingNumbers](./algorithms_leetcode/728.SelfDividingNumbers.py)
+- [发糖果II](./algorithms_leetcode/发糖果II.py)
+- [反转链表_new](./algorithms_leetcode/反转链表_new.py)
+- [腐烂的橘子](./algorithms_leetcode/腐烂的橘子.py)
+- [合并排序链表](./algorithms_leetcode/合并排序链表.py)
+- [合并排序数组](./algorithms_leetcode/合并排序数组.py)
+- [镜像二叉树](./algorithms_leetcode/镜像二叉树.py)
+- [俩栈实现队列](./algorithms_leetcode/俩栈实现队列.py)
+- [链表中倒数第k个节点](./algorithms_leetcode/链表中倒数第k个节点.py)
+- [数组交集](./algorithms_leetcode/数组交集.py)
+- [1108.IP地址无效化](./algorithms_leetcode/1108.IP地址无效化.py)
+
 
 ## Array and String  数组和字符串
 - [数组和字符串基础知识概览](./Array_String/Array_String_overview.md)

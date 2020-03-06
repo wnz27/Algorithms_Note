@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-04 18:04:34
+@LastEditTime: 2020-03-06 09:13:30
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -159,3 +159,21 @@ q = collections.deque()
 q.append(1)
 q.append(2)
 print(q)
+
+print([0]*4)
+
+a = [1,23,4]
+for i in a:
+    i += 1  # 迭代里的i，调用不到list的set方法
+    print(a)
+
+print(int(9/2))
+
+
+line = [i for i in range(1,9+1)]
+print(line)
+
+print(list(range(1,10)))
+print(line[6:11])
+print(sum(line[9:11]))
+print(sum([]))
