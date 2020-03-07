@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-06 09:13:30
+@LastEditTime: 2020-03-07 10:30:23
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -177,3 +177,8 @@ print(list(range(1,10)))
 print(line[6:11])
 print(sum(line[9:11]))
 print(sum([]))
+for i in range(10,9, -1):
+    print(i)
+print([None] * 10)
+
+[].pop()
