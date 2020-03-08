@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-07 10:30:23
+@LastEditTime: 2020-03-08 18:46:38
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -181,4 +181,15 @@ for i in range(10,9, -1):
     print(i)
 print([None] * 10)
 
-[].pop()
+# [].pop()
+print(9//5)
+print(9//10)
+a = [1,2,3,4]
+print(a[:1] + a[1+1:])
+print(list(range(10+1)[:0:-1]))
+a = {1:99}
+a[27] = 80
+a[3] = 100
+print(a)
+print(1 in a)
+print(float('inf') + 1)
