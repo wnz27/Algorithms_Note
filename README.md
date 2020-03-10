@@ -2,7 +2,7 @@
  * @Author: 27
  * @LastEditors: 27
  * @Date: 2019-10-29 17:34:27
- * @LastEditTime: 2020-03-10 10:53:41
+ * @LastEditTime: 2020-03-11 00:17:16
  * @FilePath: /Algorithms_Note/README.md
  * @description: 笔记总目录
  -->
@@ -69,14 +69,13 @@
 - [1108.IP地址无效化](./algorithms_leetcode/1108.IP地址无效化.py)
 - [N皇后](./algorithms_leetcode/N皇后.py)
 - [买卖股票的最佳时机](./algorithms_leetcode/买卖股票的最佳时机.py)
-
+- [将数组分成和相等的三个部分](./algorithms_leetcode/将数组分成和相等的三个部分.py)
 
 ## Array and String  数组和字符串
 - [数组和字符串基础知识概览](./Array_String/Array_String_overview.md)
 
 ## Queue & Stack  队列和栈
 - [队列和栈基础知识概览](./Queue_Stack/Queue_Stack_overview.md)
-- 
 
 ## Binary-Tree 二叉树
 - [二叉树基础知识概览](./Binary_Tree/Binary_Tree_overview.md)

@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-10 10:35:18
+@LastEditTime: 2020-03-11 00:39:07
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -247,3 +247,4 @@ findRepeatNumber([2, 3, 1, 0, 2, 5, 3])
 # print(len([][0]))IndexError: list index out of range
 a= []
 print(not a)
+print(0%3)
