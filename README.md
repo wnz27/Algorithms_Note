@@ -2,7 +2,7 @@
  * @Author: 27
  * @LastEditors: 27
  * @Date: 2019-10-29 17:34:27
- * @LastEditTime: 2020-03-05 09:54:13
+ * @LastEditTime: 2020-03-10 10:53:41
  * @FilePath: /Algorithms_Note/README.md
  * @description: 笔记总目录
  -->
@@ -24,7 +24,8 @@
 ## 《剑指offer》-- 摘自leetcode
 - [从上到下打印二叉树II     ----    简单](./《剑指offer刷刷刷刷》/从上到下打印二叉树II.py)
 - [和为s的连续正数序列      ----    简单](./《剑指offer刷刷刷刷》/和为s的连续正数序列.py)
-- []()
+- [数组中重复数字          ----    简单](./《剑指offer刷刷刷刷》/数组中重复数字.py)
+- [二维数组中的查找         ----    简单](./《剑指offer刷刷刷刷》/二维数组中的查找.py)
 
 ## 动态规划相关问题
 - [斐波那契相关问题](./动态规划相关学习/fibonnaci.py)
@@ -66,6 +67,8 @@
 - [链表中倒数第k个节点](./algorithms_leetcode/链表中倒数第k个节点.py)
 - [数组交集](./algorithms_leetcode/数组交集.py)
 - [1108.IP地址无效化](./algorithms_leetcode/1108.IP地址无效化.py)
+- [N皇后](./algorithms_leetcode/N皇后.py)
+- [买卖股票的最佳时机](./algorithms_leetcode/买卖股票的最佳时机.py)
 
 
 ## Array and String  数组和字符串

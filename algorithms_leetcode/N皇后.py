@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-06 12:31:07
-@LastEditTime: 2020-03-06 13:09:29
+@LastEditTime: 2020-03-08 19:15:03
 @FilePath: /Algorithms_Note/algorithms_leetcode/N皇后.py
 @description: type some description
 '''
@@ -19,7 +19,6 @@ class Solution(object):
         """
         res = []
         self.helper([-1]*n, 0, n, res)
-        print("1234567890")
         return res
     def helper(self, columnPositions, rowIndex, n, l):     # 辅助方法
         if rowIndex == n:                               # 如果检查完所有行，则输出

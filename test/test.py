@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-08 18:46:38
+@LastEditTime: 2020-03-10 10:35:18
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -118,7 +118,7 @@ print(a)
 print(max(a['123'], 2))
 print("*" * 80)
 b = {1:10,2:30}
-key = max(b , key= lambda x: b[x])
+key = max(b , key= lambda x: [x])
 print(key, b[key])
 
 print([2,1,1,2][1::2])
@@ -193,3 +193,57 @@ a[3] = 100
 print(a)
 print(1 in a)
 print(float('inf') + 1)
+
+print(-~1)
+print(~-2)
+a = 1
+b = 2
+a^=b
+b^=a
+a^=b
+print(a, b)
+print("*" * 80)
+b = {1:10,2:30}
+key = max(b , key= lambda x: x<20)
+print(key, b[key])
+
+print(int('1'))
+print('2'.isdigit())
+print(9//10)
+a = 1
+if a == 1:
+    print('77777',a)
+elif a<10:
+    print("123123123122dsafasf")
+
+for k,v in {1:23, 4:56}.items():
+    print(k, v)
+b.setdefault(3, None)
+b.setdefault(1, 7)
+print(b)
+def findRepeatNumber(nums):
+        import random
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        helper = {}
+        res = []
+        # 哈希
+        for i in nums:
+            if i in helper:
+                helper[i] += 1
+            helper.setdefault(i, 1)
+        for k,v in helper.items():
+            if v > 1:
+                res.append(k)
+        print(helper, res)
+        if res != []:
+            random.shuffle(res)
+            return res[0]
+        else:
+            return -1
+findRepeatNumber([2, 3, 1, 0, 2, 5, 3])
+# print(len([][0]))IndexError: list index out of range
+a= []
+print(not a)
