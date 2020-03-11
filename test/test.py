@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-11 00:39:07
+@LastEditTime: 2020-03-11 22:00:56
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -248,3 +248,16 @@ findRepeatNumber([2, 3, 1, 0, 2, 5, 3])
 a= []
 print(not a)
 print(0%3)
+
+print([1,2,3].index(2))
+print(bool([]))
+class A:
+    pass
+tem1 = A()
+tem2 = A()
+a = {tem1:"123",tem2:"45"}
+a.setdefault(tem1,"555")
+print(a)
+print(["123","456","789"])
+print(list(zip(*["456","789"])))
+print(list(zip(*["456","789"]))[::-1])

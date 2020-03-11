@@ -2,7 +2,7 @@
  * @Author: 27
  * @LastEditors: 27
  * @Date: 2019-10-29 17:34:27
- * @LastEditTime: 2020-03-11 00:17:16
+ * @LastEditTime: 2020-03-11 21:13:13
  * @FilePath: /Algorithms_Note/README.md
  * @description: 笔记总目录
  -->
@@ -26,6 +26,14 @@
 - [和为s的连续正数序列      ----    简单](./《剑指offer刷刷刷刷》/和为s的连续正数序列.py)
 - [数组中重复数字          ----    简单](./《剑指offer刷刷刷刷》/数组中重复数字.py)
 - [二维数组中的查找         ----    简单](./《剑指offer刷刷刷刷》/二维数组中的查找.py)
+- [重建二叉树              ----   中等](./《剑指offer刷刷刷刷》/重建二叉树.py)
+- [队列最大值              ----   中等](./《剑指offer刷刷刷刷》/队列最大值.py)
+- [树的子结构              ----   中等](./《剑指offer刷刷刷刷》/树的子结构.py)
+- [对称的二叉树            ----    简单](./《剑指offer刷刷刷刷》/对称的二叉树.py)
+- [剪绳子II（未解决）               ----   中等](./《剑指offer刷刷刷刷》/剪绳子.py)
+- [删除链表节点            ----   简单](./《剑指offer刷刷刷刷》/删除链表节点.py)
+- [顺时针打印矩阵          ----   简单](./《剑指offer刷刷刷刷》/顺时针打印矩阵.py)
+- [复制复杂链表            ----   中等](./《剑指offer刷刷刷刷》/复制复杂链表.py)
 
 ## 动态规划相关问题
 - [斐波那契相关问题](./动态规划相关学习/fibonnaci.py)
@@ -50,7 +58,6 @@
 - [709.  转换成小写字母](./algorithms_leetcode/709.转换成小写字母.py)
 - [724.  寻找数组的中心索引](./algorithms_leetcode/724.寻找数组的中心索引.py)
 - [747. 至少是其他数字两倍的最大数](./algorithms_leetcode/747.至少是其他数字两倍的最大数.py)
-- [循环队列设计，数组实现，线程不安全](./Queue_Stack/Queue_Stack_overview.md)
 - [206.  反转链表](./algorithms_leetcode/206.反转链表.py)
 - [92.   反转链表||](./algorithms_leetcode/92.反转链表||.py)
 - [MaxConsecutiveOnes](./algorithms_leetcode/MaxConsecutiveOnes.py)
