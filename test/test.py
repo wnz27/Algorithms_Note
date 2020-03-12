@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-11 22:00:56
+@LastEditTime: 2020-03-12 09:54:15
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -261,3 +261,8 @@ print(a)
 print(["123","456","789"])
 print(list(zip(*["456","789"])))
 print(list(zip(*["456","789"]))[::-1])
+print([1,2,3,4][:3])
+print("1234"[:3])
+a= [1,2,3,4]
+a.insert(1,100)
+print(a)
