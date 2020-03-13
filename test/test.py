@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-12 09:54:15
+@LastEditTime: 2020-03-14 00:44:17
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -263,6 +263,38 @@ print(list(zip(*["456","789"])))
 print(list(zip(*["456","789"]))[::-1])
 print([1,2,3,4][:3])
 print("1234"[:3])
-a= [1,2,3,4]
+a= [1,2,3,4,4,5,4,5]
 a.insert(1,100)
 print(a)
+b = {1:100, 2:999, 3:456}
+print(max(b, key= lambda x : b[x]))
+print(a.count(4))
+print(float(1))
+
+print("[asdfasd]".strip('[]'))
+print("[1,2,3,null,null,4,5]".strip('[]').split(','))
+a = [1,2,3,4,5,6,7]
+res = []
+level = []
+s = 1
+c = 0
+for i in a:
+    if c == s:
+        c = 0
+        s *= 2
+        res.append(level)
+        level = []
+    level.append(i)
+    print("level", level)
+    c += 1
+res.append(level)
+print(res)
+a = "12345"
+# a[-1] = "w"
+print(a[:-1]+"]")
+
+a = [1,23,4,5]
+
+c = 10
+import math
+print(math.ceil(5/2))

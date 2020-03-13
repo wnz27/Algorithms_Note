@@ -2,7 +2,7 @@
  * @Author: 27
  * @LastEditors: 27
  * @Date: 2020-03-12 13:19:38
- * @LastEditTime: 2020-03-12 13:34:46
+ * @LastEditTime: 2020-03-13 07:51:21
  * @FilePath: /Algorithms_Note/algorithms_leetcode/0leetcode目录.md
  * @description: type some description
  -->
@@ -46,3 +46,4 @@
 - [买卖股票的最佳时机](./买卖股票的最佳时机.py)
 - [将数组分成和相等的三个部分](./将数组分成和相等的三个部分.py)
 - [1071.字符串的最大因子,优化的不够好](./字符串的最大因子.py)
+- [多数元素](./多数元素.py)

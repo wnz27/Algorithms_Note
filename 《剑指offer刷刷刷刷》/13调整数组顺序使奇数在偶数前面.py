@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-12 00:08:17
-@LastEditTime: 2020-03-12 11:44:52
+@LastEditTime: 2020-03-13 15:53:10
 @FilePath: /Algorithms_Note/《剑指offer刷刷刷刷》/13调整数组顺序使奇数在偶数前面.py
 @description: type some description
 '''
@@ -21,4 +21,23 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
+        # 双指针
+        head, tail = 0, len(nums) - 1
+        while head < tail:
+            if nums[head] % 2 == 0 and nums[tail] % 2 == 1:
+                nums[head], nums[tail] = nums[tail], nums[head]
+                head += 1
+                tail -= 1
+            else:
+                if nums[head] % 2 == 0:     # 尾指针所指的数已经是偶数
+                    tail -= 1
+                elif nums[tail] % 2 == 1:   # 头指针指的数已经是奇数
+                    head += 1
+                else:   # 尾指针所指的数已经是偶数且头指针指的数已经是奇数
+                    head += 1
+                    tail -= 1
+        return nums
+        
+
+
         
