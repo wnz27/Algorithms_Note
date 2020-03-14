@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-14 00:44:17
+@LastEditTime: 2020-03-14 12:14:09
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -298,3 +298,13 @@ a = [1,23,4,5]
 c = 10
 import math
 print(math.ceil(5/2))
+print("{" == "(" or "{" == "{" or "{" == "[")
+for char in "()[]{}":
+    print(char)
+print(divmod(12,10))
+
+print("1i"[:-1])
+print("1+1i".split("+"))
+print(int("-1"))
+
+import random
