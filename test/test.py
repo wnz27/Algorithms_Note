@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-14 12:14:09
+@LastEditTime: 2020-03-15 08:05:45
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -307,4 +307,17 @@ print("1i"[:-1])
 print("1+1i".split("+"))
 print(int("-1"))
 
-import random
+import random, copy
+
+a = [[0,0,1,0,0,0,0,1,0,0,0,0,0],
+ [0,0,0,0,0,0,0,1,1,1,0,0,0],
+ [0,1,1,0,1,0,0,0,0,0,0,0,0],
+ [0,1,0,0,1,1,0,0,1,0,1,0,0],
+ [0,1,0,0,1,1,0,0,1,1,1,0,0],
+ [0,0,0,0,0,0,0,0,0,0,1,0,0],
+ [0,0,0,0,0,0,0,1,1,1,0,0,0],
+ [0,0,0,0,0,0,0,1,1,0,0,0,0]]
+b = list(a)
+c = copy.deepcopy(a)
+print(id(a), id(b), id(c))
+print(id(a[0]), id(b[0]), id(c[0]))
