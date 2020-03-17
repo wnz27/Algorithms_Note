@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-14 23:57:35
-@LastEditTime: 2020-03-14 23:57:53
+@LastEditTime: 2020-03-16 00:33:22
 @FilePath: /Algorithms_Note/其他面试题目/解码方法.py
 @description: type some description
 '''
@@ -23,4 +23,10 @@
 输出: 3
 解释: 它可以解码为 "BZ" (2 26), "VF" (22 6), 或者 "BBF" (2 2 6) 。
 '''
-
+class Solution(object):
+    def numDecodings(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        

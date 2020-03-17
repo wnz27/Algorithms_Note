@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-15 08:05:45
+@LastEditTime: 2020-03-17 23:09:30
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -321,3 +321,41 @@ b = list(a)
 c = copy.deepcopy(a)
 print(id(a), id(b), id(c))
 print(id(a[0]), id(b[0]), id(c[0]))
+from functools import reduce
+print(reduce(lambda x, y: x + y, [[1,2],[3,4],[5,6]]))
+
+a = 10
+b = 10
+print(id(a), id(b))
+print(1e7)
+
+def my_func1():
+    for i in range(5):
+        yield i
+g = my_func1()
+print(next(g))
+print(next(g))
+print("*"*80)
+for i in g:
+    print(i)
+
+a = collections.Counter([1,2,3,2,2,1,1,5,6,4,3])
+b = collections.Counter("sereeedssftryhhuj")
+print(a, "|||", b)
+
+all([1111111])
+a = {None:10, 2: 10}
+del a[None]
+print(a)
+a = []
+b = []
+for i in range(4):
+    b.append(i)
+    a.append(b[:])
+print(a, b)
+for i in range(10,-1,-1):
+    print(i)
+print([0]*0)
+b = [0] * 10
+print(b)
+print("".join(["1","2"]))
