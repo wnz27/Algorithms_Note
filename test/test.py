@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-17 23:09:30
+@LastEditTime: 2020-03-18 00:47:15
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -359,3 +359,22 @@ print([0]*0)
 b = [0] * 10
 print(b)
 print("".join(["1","2"]))
+print("100"[-2:])
+l = "0adf".startswith("0")
+print(l)
+# class Solution {
+# public:
+#     int numDecodings(string s) {
+#         int i,j,n=s.size();
+#         vector<int>a(n+1,0);a[0]=1;
+#         if(s[0]=='0')return 0;//首字符为0直接返回0
+#         a[1]=1;
+#         for(i=1;i<n;i++){
+#             j=(s[i-1]-'0')*10+s[i]-'0';//和前一个字符合起来的值
+#             if(s[i]>'0')a[i+1]=a[i];//此处不为0，继承前一项的方法数
+#             if(j>9&&j<=26)a[i+1]+=a[i-1];//如果和前面一项合起来在10~26直接，则再加上前两项的数
+#             if(a[i+1]==0)return 0;//出现不合法直接返回0
+#         }
+#         return a[n];
+#     }
+# };

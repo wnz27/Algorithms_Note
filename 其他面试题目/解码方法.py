@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-14 23:57:35
-@LastEditTime: 2020-03-16 00:33:22
+@LastEditTime: 2020-03-18 02:00:07
 @FilePath: /Algorithms_Note/其他面试题目/解码方法.py
 @description: type some description
 '''
@@ -29,4 +29,17 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        
+        if s.startswith("0"):
+            return 0
+        l = len(s)
+        dp = [0] * (l + 1)
+        dp[0] = 1
+        dp[1] = 1
+        for i in range(1, l):
+            tem = int(s[i-1]) * 10 + int(s[i])
+            if int(s[i]) > 0:
+                dp[i + 1] = dp[i]
+            if tem > 9 and tem <= 26:
+                dp[i + 1] += dp[i - 1]
+            if dp[i + 1] == 0: return 0
+        return dp[l]
