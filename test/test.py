@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-18 00:47:15
+@LastEditTime: 2020-03-18 23:33:26
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -378,3 +378,16 @@ print(l)
 #         return a[n];
 #     }
 # };
+
+print("1".isalnum(), "a".isalnum())
+print("1234"[1:], "1234"[:-1], "1234"[1:-1])
+n = ["1","2"]
+print(*n)
+import re
+re_str = "^[\+\-]?\d+"
+result = re.match(re_str, "1234")
+print(result.group())
+a = "".join(["t","h","e"," ","s","k","y"," ","i","s"," ","b","l","u","e"])
+print(a, a.split(" "))
+b = " ".join(reversed(a.split(" ")))
+print(b, list(b))

@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-18 01:12:09
-@LastEditTime: 2020-03-18 02:23:22
+@LastEditTime: 2020-03-18 10:36:15
 @FilePath: /Algorithms_Note/其他面试题目/矩形重叠.py
 @description: type some description
 '''
@@ -31,6 +31,7 @@ class Solution(object):
         :type rec2: List[int]
         :rtype: bool
         """
+        # 上下左右边界法
         return not (rec1[1] >= rec2[3] or
                     rec1[0] >= rec2[2] or 
                     rec1[3] <= rec2[1] or 
@@ -41,6 +42,7 @@ class Solution(object):
         :type rec2: List[int]
         :rtype: bool
         """
+        # 映射法
         def intersect(p_left, p_right, q_left, q_right):
             return min(p_right, q_right) > max(p_left, q_left)
         return (intersect(rec1[0], rec1[2], rec2[0], rec2[2]) and
