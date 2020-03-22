@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-19 17:44:16
+@LastEditTime: 2020-03-21 23:34:36
 @FilePath: /Algorithms_Note/test/test.py
 @description: type some description
 '''
@@ -393,3 +393,8 @@ b = " ".join(reversed(a.split(" ")))
 print(b, list(b))
 t = collections.Counter("aabbddtegGgGGghyyu")
 print(t)
+
+dict2={}.fromkeys(('x','y'), (1,2))
+print(dict2)
+import math
+print(math.gcd(4,2))

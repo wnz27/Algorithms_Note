@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-19 17:04:07
-@LastEditTime: 2020-03-19 18:02:32
+@LastEditTime: 2020-03-21 20:19:39
 @FilePath: /Algorithms_Note/其他面试题目/最长回文串.py
 @description: type some description
 '''
@@ -36,5 +36,6 @@ class Solution(object):
             return l
         else:
             return l - c + 1  # 单数字符最多存在一个
+        
 
 
