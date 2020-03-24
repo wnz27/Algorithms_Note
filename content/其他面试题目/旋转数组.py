@@ -2,8 +2,8 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-20 19:24:22
-@LastEditTime: 2020-03-20 19:24:43
-@FilePath: /Algorithms_Note/其他面试题目/旋转数组.py
+@LastEditTime: 2020-03-24 10:03:07
+@FilePath: /Algorithms_Note/content/其他面试题目/旋转数组.py
 @description: type some description
 '''
 '''
@@ -30,3 +30,18 @@ class Solution(object):
         :type k: int
         :rtype: None Do not return anything, modify nums in-place instead.
         """
+        l = len(nums)
+        if l < k:
+            self.swap(nums, k % l)
+        else:
+            self.swap(nums, k)
+        
+    def swap1(self, nums: List[int], k: int) -> None:
+        for i in range(len(nums) - k):
+            nums.append(nums.pop(0))
+    
+    def swap(self, nums: List[int], k: int) -> None:
+        for i in range(k):
+            nums.insert(0, nums.pop())
+    
+    

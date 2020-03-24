@@ -2,8 +2,8 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-21 23:34:36
-@FilePath: /Algorithms_Note/test/test.py
+@LastEditTime: 2020-03-24 10:58:07
+@FilePath: /Algorithms_Note/content/test/test.py
 @description: type some description
 '''
 print(sum([1,2,3]))
@@ -398,3 +398,6 @@ dict2={}.fromkeys(('x','y'), (1,2))
 print(dict2)
 import math
 print(math.gcd(4,2))
+
+print(collections.Counter([1,2,3,4,3,3,2,5]))
+print(collections.Counter([0]))
