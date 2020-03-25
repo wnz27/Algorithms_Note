@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-24 10:58:07
+@LastEditTime: 2020-03-24 18:26:43
 @FilePath: /Algorithms_Note/content/test/test.py
 @description: type some description
 '''
@@ -401,3 +401,15 @@ print(math.gcd(4,2))
 
 print(collections.Counter([1,2,3,4,3,3,2,5]))
 print(collections.Counter([0]))
+a = 'a'
+print(a > 'b' or 'c')
+l = ['1', '2', '3', '4', '5']
+print(l[10:])
+def f(string):
+    tem = string.split()
+    print(tem)
+    res = tem[-1]
+    print(res)
+    return len(res)
+
+print(f('XSUWHQ'))

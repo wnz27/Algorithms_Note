@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-24 11:59:19
-@LastEditTime: 2020-03-24 13:19:27
+@LastEditTime: 2020-03-24 13:28:25
 @FilePath: /Algorithms_Note/content/其他面试题目/只出现一次的数字.py
 @description: type some description
 '''
@@ -67,7 +67,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        res = nums[0]
-        for i range(1, len(nums)):
-            res ^= nums[i]
+        res = 0
+        for i in nums:
+            res ^= i
         return res
