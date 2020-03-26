@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-24 18:26:43
+@LastEditTime: 2020-03-25 18:10:20
 @FilePath: /Algorithms_Note/content/test/test.py
 @description: type some description
 '''
@@ -413,3 +413,4 @@ def f(string):
     return len(res)
 
 print(f('XSUWHQ'))
+{}.setdefault("asdf", 123)
