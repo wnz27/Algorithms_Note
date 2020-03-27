@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-25 18:10:20
+@LastEditTime: 2020-03-26 17:22:23
 @FilePath: /Algorithms_Note/content/test/test.py
 @description: type some description
 '''
@@ -414,3 +414,27 @@ def f(string):
 
 print(f('XSUWHQ'))
 {}.setdefault("asdf", 123)
+
+a = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+b = list(map(list, zip(*a)))
+print(id(a), id(b))
+print(b)
+d = [
+    [7, 4, 1], 
+    [8, 5, 2], 
+    [9, 6, 3]
+]
+c = [
+    [1, 4, 7], 
+    [2, 5, 8], 
+    [3, 6, 9]
+]
+
+e = [{} for i in range(9)]
+print(e)
+print(3//3)
+print(5//2 + 5%2)

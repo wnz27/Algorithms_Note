@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-25 18:24:48
-@LastEditTime: 2020-03-26 08:54:11
+@LastEditTime: 2020-03-26 10:52:05
 @FilePath: /Algorithms_Note/content/其他面试题目/有效的数独.py
 @description: type some description
 '''
@@ -57,4 +57,24 @@ class Solution(object):
         :type board: List[List[str]]
         :rtype: bool
         """
-        
+        # 初始化哈希容器记录数字
+        rows = [{} for i in range(9)]
+        cols = [{} for i in range(9)]
+        box_indexs = [{} for i in range(9)]
+        for i in range(9):
+            for j in range(9):
+                num = board[i][j]
+                if num != ".":
+                    num = int(num)
+                    # 找到子方块
+                    box_index = (i // 3) * 3 + j // 3
+                    # 计数统计数字
+                    rows[i][num] = rows[i].get(num, 0) + 1
+                    cols[j][num] = cols[i].get(num, 0) + 1
+                    box_indexs[box_index][num] = box_indexs[box_index].get(num, 0) + 1
+                    # 判断是否有重复的数字
+                    if rows[i][num] > 1 or cols[j][num] > 1 or box_indexs[box_index][num] > 1:
+                        return False
+        return True
+    
+    

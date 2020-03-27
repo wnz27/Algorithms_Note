@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-26 08:39:43
-@LastEditTime: 2020-03-26 08:55:00
+@LastEditTime: 2020-03-26 09:36:41
 @FilePath: /Algorithms_Note/content/其他面试题目/ 车的可用捕获量.py
 @description: type some description
 '''
@@ -60,4 +60,22 @@ class Solution(object):
         :type board: List[List[str]]
         :rtype: int
         """
-        
+        cnt, r, c = 0, 0, 0
+        dx, dy = [-1, 0, 1, 0], [0, 1, 0, -1]
+        for i in range(8):
+            for j in range(8):
+                if board[i][j] == "R":
+                    r, c = i, j
+        for i in range(4):
+            step = 0
+            while True:
+                cr = r + step * dx[i]
+                cc = c + step * dy[i]
+                if cc < 0 or cc >=8 cr <0 or cc >=8 or board[cr][cc] == "B":
+                    break
+                if board[cr][cc] == "p":
+                    cnt += 1
+                    break
+                step += 1
+        return cnt
+     
