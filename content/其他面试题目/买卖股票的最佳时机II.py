@@ -2,8 +2,8 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-20 19:06:34
-@LastEditTime: 2020-03-20 19:14:03
-@FilePath: /Algorithms_Note/其他面试题目/买卖股票的最佳时机II.py
+@LastEditTime: 2020-03-29 17:11:27
+@FilePath: /Algorithms_Note/content/其他面试题目/买卖股票的最佳时机II.py
 @description: type some description
 '''
 '''
@@ -46,6 +46,9 @@ class Solution(object):
         for price in prices:
             tmp = d_i_0     # 存储上一次不持有的利润值
             d_i_0 = max(d_i_0, d_i_1 + price)
-            d_i_1 = max(d_i_1, tmp - price)
+            d_i_1 = max(d_i_1,  -price)
+            print(d_i_0, d_i_1)
         return d_i_0
+s = Solution()
+print(s.maxProfit([7,1,5,3,6,4]))
     

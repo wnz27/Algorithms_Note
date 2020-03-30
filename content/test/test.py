@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-26 17:22:23
+@LastEditTime: 2020-03-31 01:44:53
 @FilePath: /Algorithms_Note/content/test/test.py
 @description: type some description
 '''
@@ -438,3 +438,34 @@ e = [{} for i in range(9)]
 print(e)
 print(3//3)
 print(5//2 + 5%2)
+from fractions import gcd
+a = reduce(gcd, [2,2,4,6,8,20],1)
+b = collections.Counter([0,0,0,1,1,1,2,2,2]).values()
+a = reduce(gcd, b)
+print("alalalla", a)
+def fun1(x,y):
+    return x * y
+print(reduce(fun1,[1,2,3],2))
+
+k, v = map(lambda x: int(x), ["1","2"])
+print(k, v)
+a = collections.OrderedDict({2:5, 1:6, 8:10, 4:7})
+print(a)
+a = sorted({2:5, 1:6, 8:10, 4:7}.items(), key=lambda x: x[0])
+for k,v in a:
+    print(k,v)
+b = set("aabbcc")
+print(b)
+
+class Parent:
+    x = 1
+class C1(Parent):
+    pass
+class C2(Parent):
+    pass
+print(Parent.x, C1.x, C2.x)
+C1.x = 2
+print(Parent.x, C1.x, C2.x)
+Parent.x = 3
+print(Parent.x, C1.x, C2.x)
+

@@ -2,8 +2,8 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-14 08:20:44
-@LastEditTime: 2020-03-14 08:21:13
-@FilePath: /Algorithms_Note/其他面试题目/爬楼梯.py
+@LastEditTime: 2020-03-30 20:54:29
+@FilePath: /Algorithms_Note/content/其他面试题目/爬楼梯.py
 @description: type some description
 '''
 '''
@@ -32,5 +32,6 @@ class Solution(object):
         """
         n0, n1 = 1,1
         for i in range(n):
-            n0,n1 = n1, n1 + n0
+            n0, n1 = n1, n1 + n0
         return n0
+        
