@@ -2,7 +2,7 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-02-25 12:04:45
-@LastEditTime: 2020-03-31 01:44:53
+@LastEditTime: 2020-04-01 01:12:30
 @FilePath: /Algorithms_Note/content/test/test.py
 @description: type some description
 '''
@@ -468,4 +468,4 @@ C1.x = 2
 print(Parent.x, C1.x, C2.x)
 Parent.x = 3
 print(Parent.x, C1.x, C2.x)
-
+print("*" * 80)
