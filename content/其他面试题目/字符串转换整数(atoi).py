@@ -2,8 +2,8 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-18 11:22:08
-@LastEditTime: 2020-03-18 11:50:47
-@FilePath: /Algorithms_Note/其他面试题目/字符串转换整数(atoi).py
+@LastEditTime: 2020-04-03 01:27:19
+@FilePath: /Algorithms_Note/content/其他面试题目/字符串转换整数(atoi).py
 @description: type some description
 '''
 '''
@@ -53,7 +53,7 @@ class Solution(object):
         re_str = r"\s*[+|-]?\d+"
         result = re.match(re_str, str)
         try:
-            result = int(result[0].strip(" "))
+            result = int(result.group().strip(" "))
         except:
             return 0
         else:
