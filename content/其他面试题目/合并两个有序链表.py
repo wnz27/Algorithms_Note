@@ -2,8 +2,8 @@
 @Author: 27
 @LastEditors: 27
 @Date: 2020-03-14 09:42:41
-@LastEditTime: 2020-03-14 10:07:51
-@FilePath: /Algorithms_Note/其他面试题目/合并两个有序链表.py
+@LastEditTime: 2020-05-02 00:09:11
+@FilePath: /Algorithms_Note/content/其他面试题目/合并两个有序链表.py
 @description: type some description
 '''
 '''
@@ -77,3 +77,30 @@ class Solution(object):
         else:
             l2.next = self.mergeTwoLists2(l2.next, l1)
             return l2
+    # 利用数组
+    def mergeTwoLists3(self, l1, l2):
+        """
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        """
+        p1, p2 = l1, l2
+        tmp = []
+        while l1 and l2:
+            if l1.val < l2.val:
+                tmp.append(l1)
+                l1 = l1.next
+            else:
+                tmp.append(l2)
+                l2 = l2.next
+        if l1 is None:
+            while l2:
+                tmp.append(l2)
+                l2 = l2.next
+        else:
+            while l1:
+                tmp.append(l1)
+                l1 = l1.next
+        for i in range(len(tmp)-1):
+            tmp[i].next = tmp[i + 1]
+        return tmp[0] if len(tmp) > 0 else 0
