@@ -6,6 +6,8 @@
 @FilePath: /Algorithms_Note/content/数据结构与算法基础学习/Trie字典树/my_trie.py
 @description: type some description
 '''
+
+
 class Node:
     def __init__(self, is_word=False):
         self.is_word = is_word
@@ -20,7 +22,7 @@ class MyTrie:
         """
         self.root = Node()
         self.size = 0
-    
+
     @property
     def get_size(self):
         """
@@ -50,7 +52,7 @@ class MyTrie:
             curr.is_word = True
             # 这时才能确认我们添加的是一个新的单词，才把size+1
             self.size += 1
-    
+
     def contains_word(self, word):
         """
         查看单词word是否在trie中
@@ -70,10 +72,17 @@ class MyTrie:
         # 所以直接返回is_word的值即可
         return curr.is_word
 
-
-
-            
-
-    
-
-    
+    def is_prefix(self, prefix):
+        """
+        description: 判断trie中是否有一prefix为前缀的单词，定义一个单词的本身也是其前缀。
+        :param prefix: 前缀字符串
+        :return: bool, true or false
+        """
+        curr = self.root
+        for char in prefix:
+            if char not in curr.next:
+                return False
+            else:
+                curr = curr.next[char]
+        # 这个无需看标识，不管遍历完prefix是不是单词的结尾都可以说trie中有以prefix为前缀的单词
+        return True
