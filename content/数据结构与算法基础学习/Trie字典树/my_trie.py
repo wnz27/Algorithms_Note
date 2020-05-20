@@ -86,3 +86,8 @@ class MyTrie:
                 curr = curr.next[char]
         # 这个无需看标识，不管遍历完prefix是不是单词的结尾都可以说trie中有以prefix为前缀的单词
         return True
+
+
+"""
+leetcode 208 ， 自己实现前缀树~~~~可以去做一下
+"""
