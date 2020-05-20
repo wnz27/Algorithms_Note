@@ -1,3 +1,11 @@
+'''
+@Author: 27
+@LastEditors: 27
+@Date: 2020-05-21 01:34:58
+@LastEditTime: 2020-05-21 02:33:58
+@FilePath: /Algorithms_Note/content/数据结构与算法基础学习/Trie字典树/leetcode_211_添加与搜索单词_数据结构设计.py
+@description: type some description
+'''
 # -*- coding:utf-8 -*-
 # Create by 27
 # @Time : 2020/5/21 01:34
@@ -79,7 +87,6 @@ class WordDictionary(object):
             # 如果循环遍历完还没有匹配到则返回False
             return False
 
-
-
-
-
+"""
+leetcode 677问题，另一相关题目
+"""
