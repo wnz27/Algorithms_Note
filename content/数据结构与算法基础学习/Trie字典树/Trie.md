@@ -38,6 +38,12 @@ class Node:
 字典树图示：
 ![Trie字典树](./img/trie0.png)
 
+根据图可以知道实际上是这么一种结构：
+```
+self.root.next = {'c': Nodec , 'd': Noded, 'p': Nodep}
+Nodec.next =  {'a' : Nonda}
+```
+
 ### 实现字典树Trie
 ```
 class Node:
