@@ -38,3 +38,18 @@ class Solution(object):
             slow = slow.next
             fast = fast.next.next
         return slow
+
+    def middleNode2(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        curr = head
+        helper = []
+        while curr:
+            helper.append(curr)
+            curr = curr.next
+        helper_length = len(helper)
+        if helper_length == 0:
+            return None
+        return helper[int(helper_length / 2)]
