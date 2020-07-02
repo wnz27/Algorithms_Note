@@ -12,11 +12,14 @@
 输入：1->2->4, 1->3->4
 输出：1->1->2->3->4->4
 '''
+
+
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
+
 
 class Solution(object):
     # 开辟额外空间
@@ -41,6 +44,7 @@ class Solution(object):
                 curr = curr.next
                 q = q.next
         return dummyhead.next
+
     # 不开辟额外空间
     def mergeTwoLists1(self, l1, l2):
         """
@@ -60,6 +64,7 @@ class Solution(object):
             dummy = dummy.next
         dummy.next = l1 if l1 else l2
         return pre.next
+
     # 递归
     def mergeTwoLists2(self, l1, l2):
         """
@@ -77,6 +82,7 @@ class Solution(object):
         else:
             l2.next = self.mergeTwoLists2(l2.next, l1)
             return l2
+
     # 利用数组
     def mergeTwoLists3(self, l1, l2):
         """
@@ -101,6 +107,6 @@ class Solution(object):
             while l1:
                 tmp.append(l1)
                 l1 = l1.next
-        for i in range(len(tmp)-1):
+        for i in range(len(tmp) - 1):
             tmp[i].next = tmp[i + 1]
-        return tmp[0] if len(tmp) > 0 else 0
+        return tmp[0] if len(tmp) > 0 else None
