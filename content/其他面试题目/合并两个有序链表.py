@@ -33,8 +33,10 @@ class Solution(object):
         dummyhead = ListNode(0)
         curr = dummyhead
         while p or q:
-            v1 = p.val if p != None else float("inf")
-            v2 = q.val if q != None else float("inf")
+
+            v1 = p.val if p is not None else float("inf")
+            v2 = q.val if q is not None else float("inf")
+
             if v1 <= v2:
                 curr.next = ListNode(v1)
                 curr = curr.next
