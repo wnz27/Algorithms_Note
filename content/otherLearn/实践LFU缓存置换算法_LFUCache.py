@@ -1,4 +1,5 @@
 #! -*- coding=utf-8 -*-
+# least frequently used
 from DoubleLinkList import DoubleLinkedList, Node
 
 class LFUNode(Node):
