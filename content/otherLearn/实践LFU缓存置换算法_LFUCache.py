@@ -3,6 +3,9 @@
 from DoubleLinkList import DoubleLinkedList, Node
 
 class LFUNode(Node):
+    """
+    采取的缓存置换策略是， 当缓存空间满时新来的数据置换使用频率最低的那个缓存数据，实现中用频率字典加双向链表记录节点的访问次数，每次插入都更新节点频率字典， 再将新的数据插入。
+    """
     def __init__(self, key, value):
         self.freq = 1   # 频率
         super().__init__(key, value)
