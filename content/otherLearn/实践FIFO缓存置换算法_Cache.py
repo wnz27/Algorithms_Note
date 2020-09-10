@@ -2,6 +2,11 @@
 from DoubleLinkList import DoubleLinkedList, Node
 
 class FIFOCache(object):
+    """
+    ## FIFO缓存算法
+
+    其中FIFO最为简单，其基本假设就是最近被加载进来的数据下次使用到的可能性大于之前被加载进来的数据，对于符合这种假设的场景较为适用。
+    """
     def __init__(self, capacity):
         self.capacity = capacity
         self.size = 0
