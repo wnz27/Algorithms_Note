@@ -1,4 +1,5 @@
 #! -*- coding=utf-8 -*-
+# Least Recently Use
 from DoubleLinkList import DoubleLinkedList, Node
 
 class LRUCache(object):
