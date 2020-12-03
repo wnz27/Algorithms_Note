@@ -1,7 +1,12 @@
 #! -*- coding=utf-8 -*-
+# Least Recently Use
 from DoubleLinkList import DoubleLinkedList, Node
 
 class LRUCache(object):
+    """
+    LRU缓存算法采取的缓存置换策略是， 当缓存空间满时新来的数据置换到未使用时间最长的那个，实现中采用双向链表， 
+    将每次访问到的数据放在链表的最前端，从而保证链表里的数据是按使用时间有序的。
+    """
     def __init__(self, capacity):
         self.capacity = capacity
         self.map = {}
