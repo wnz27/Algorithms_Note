@@ -35,11 +35,38 @@
 
 
 class Solution:
+    # 栈实现
     def isValidSerialization(self, preorder: str) -> bool:
-        pass
+        nodes = preorder.split(",")
+        stack = []
+        for node in nodes:
+            stack.append(node)
+            while len(stack) >= 3 and stack[-1] == stack[-2] == "#" and stack[-3] != "#":
+                stack.pop(), stack.pop(), stack.pop()
+                stack.append("#")
+        return len(stack) == 1 and stack.pop(-1) == "#"
+
+    # 出度入度
+    def isValidSerialization2(self, preorder: str) -> bool:
+        diff = 1
+        nodes = preorder.split(",")
+        for node in nodes:
+            diff -= 1
+            if diff < 0:
+                return False
+            if node != "#":
+                diff += 2
+        return diff == 0
 
 
 if __name__ == '__main__':
+    s = Solution()
+    t1 = "9,3,4,#,#,1,#,#,2,#,6,#,#"
+    res1 = s.isValidSerialization(t1)
+    print(res1)
+    res2 = s.isValidSerialization2(t1)
+    print(res2)
+
     pass
 
 
