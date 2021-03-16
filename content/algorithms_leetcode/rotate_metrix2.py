@@ -99,8 +99,10 @@ class Solution:
             # 验证下一个方向正确性
             r, c = row + dx, col + dy
             if r < 0 or r >= n or c < 0 or c >= n or metrix[r][c] > 0:
+                # 如果不正确则修正方向
                 dir_index = (dir_index + 1) % 4
                 dx, dy = dirs[dir_index]
+            # 给定正确的行列
             row, col = row + dx, col + dy
             # print(row, col)
         return metrix
