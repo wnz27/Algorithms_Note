@@ -14,13 +14,100 @@
 输入：n = 1
 输出：[[1]]
 """
+from typing import List
+
 
 class Solution:
     def generateMatrix(self, n: int) -> List[List[int]]:
-        target_number = n * n
+        dirs = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+        matrix = [[0] * n for _ in range(n)]
+        row, col, dirIdx = 0, 0, 0
+        for i in range(n * n):
+            matrix[row][col] = i + 1
+            print("row:{}, col:{}".format(row, col), matrix[row][col])
+            dx, dy = dirs[dirIdx]
+            r, c = row + dx, col + dy
+            if r < 0 or r >= n or c < 0 or c >= n or matrix[r][c] > 0:
+                dirIdx = (dirIdx + 1) % 4  # 顺时针旋转至下一个方向
+                dx, dy = dirs[dirIdx]
+            row, col = row + dx, col + dy
+        return matrix
 
+    def generateMatrix2(self, n: int) -> List[List[int]]:
+        matrix = [[0] * n for _ in range(n)]
+        num = 1
+        left, right, top, bottom = 0, n - 1, 0, n - 1
+        while left <= right and top <= bottom:
+            for col in range(left, right + 1):
+                matrix[top][col] = num
+                num += 1
+            for row in range(top + 1, bottom + 1):
+                matrix[row][right] = num
+                num += 1
+            if left < right and top < bottom:
+                for col in range(right - 1, left, -1):
+                    matrix[bottom][col] = num
+                    num += 1
+                    print(bottom, col, num)
+                for row in range(bottom, top, -1):
+                    matrix[row][left] = num
+                    num += 1
+                    print(row, left, num)
+
+            left += 1
+            right -= 1
+            top += 1
+            bottom -= 1
+
+        return matrix
+
+    def tttt(self, n):
+        matrix = [[0] * n for _ in range(n)]
+        num = 1
+        top, right, bottom, left = 0, n - 1, n - 1, 0
+
+        while left <= right and top <= bottom:
+            for col in range(left, right + 1):
+                matrix[top][col] = num
+                num += 1
+            for row in range(top + 1, bottom + 1):
+                matrix[row][right] = num
+                num += 1
+            if left < right and top < bottom:
+                for col in range(right - 1, left, -1):
+                    matrix[bottom][col] = num
+                    num += 1
+                for row in range(bottom, top, -1):
+                    matrix[row][left] = num
+                    num += 1
+            left += 1
+            top += 1
+            right -= 1
+            bottom -= 1
+        return matrix
+
+    def generateMatrix3(self, n: int) -> List[List[int]]:
+        target_number = n * n
+        dirs = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+        row, col, dir_index = 0, 0, 0
+        metrix = [[0] * n for _ in range(n)]
+        for i in range(target_number):
+            metrix[row][col] = i + 1
+            # print("row:{}, col:{}".format(row, col), metrix[row][col])
+
+            dx, dy = dirs[dir_index]
+            # 验证下一个方向正确性
+            r, c = row + dx, col + dy
+            if r < 0 or r >= n or c < 0 or c >= n or metrix[r][c] > 0:
+                dir_index = (dir_index + 1) % 4
+                dx, dy = dirs[dir_index]
+            row, col = row + dx, col + dy
+            # print(row, col)
+        return metrix
 
 
 if __name__ == '__main__':
+    s = Solution()
+    print(s.generateMatrix2(3))
     pass
 
