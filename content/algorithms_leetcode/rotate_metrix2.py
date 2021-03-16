@@ -15,6 +15,11 @@
 输出：[[1]]
 """
 
+class Solution:
+    def generateMatrix(self, n: int) -> List[List[int]]:
+        target_number = n * n
+
+
 
 if __name__ == '__main__':
     pass
