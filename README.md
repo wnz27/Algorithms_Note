@@ -18,6 +18,8 @@
 - [归并排序](./content/常用算法简单解析python实现/mergesort.py)
 - [堆排序](./content/常用算法简单解析python实现/heapsort.py)
 - [二分查找](./content/常用算法简单解析python实现/binarySearch.py)
+- [插入排序](./content/常用算法简单解析python实现/py_argorithm_prac/insert_sort.py)
+- [选择排序](./content/常用算法简单解析python实现/py_argorithm_prac/select_sort.py)
 
 # 算法基础知识学习笔记
 - [数据结构与算法概览](./content/AlgorithmsBasicKnowledgeNote/数据结构与算法概览.md)
