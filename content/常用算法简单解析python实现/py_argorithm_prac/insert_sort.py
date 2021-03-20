@@ -3,7 +3,13 @@
 # @Author : a27
 # @Description: 插入排序
 from typing import List
+"""
+插入排序的特性：
+重要特性，对于有序数组，插入排序的复杂度是On的，与选择排序对比来说选择排序永远是On方的。
+但是整体来看插入排序的复杂度依然是On方的。
 
+如果业务上大多是有序的数据结构，用插入排序也是比较好的选择。
+"""
 
 def insert_sort(arr: List[int]):
     for i in range(len(arr)):
