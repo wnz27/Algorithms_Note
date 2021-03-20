@@ -11,6 +11,9 @@
 class DynamicArray:
     """
     自己封装动态数组
+    整体复杂度分析：
+        改：已知索引: O(1)  未知索引: O(n)
+        查：已知索引: O(1)  未知索引: O(n)
     """
 
     def __init__(self, capacity=20):
@@ -71,6 +74,7 @@ class DynamicArray:
     def get(self, index):
         """
         拿到索引位置的元素
+        O(1)
         """
         if index < 0 or index >= self.__size:
             raise IndexError('Get failed! Index is illegal!!!')
@@ -85,6 +89,7 @@ class DynamicArray:
     def set(self, index, e):
         """
         修改索引位置的元素
+        O(1)
         """
         if index < 0 or index >= self.__size:
             raise IndexError('Get failed! Index is illegal!!!')
@@ -93,6 +98,7 @@ class DynamicArray:
     def contains(self, e):
         """
         查找数组中是否有元素e
+        O(n)
         """
         for i in self.__l:
             if i == e:
@@ -102,6 +108,7 @@ class DynamicArray:
     def find(self, e):
         """
         查找元素e所在的索引，如果不存在元素e，返回-1
+        O(n)
         """
         for i in range(self.__size):
             if self.__l[i] == e:
