@@ -17,3 +17,6 @@
 - [基于动态数组实现队列](./base_darray_queue.py)
 - [基于Python内置list实现循环队列](./loopQueue.py)
 
+# 数据结构笔记
+- [数据结构学习笔记](./note.md)
+
