@@ -76,5 +76,7 @@ if __name__ == '__main__':
     a = [[4, 5, 6], [7, 8, 9]]
     # print(list(zip(*a))[::-1])
     a = [1, 3, 4]
-    print(min(a))
+    # print(min(a))
+    args = input().split()
+    print(args, type(args))
     pass
