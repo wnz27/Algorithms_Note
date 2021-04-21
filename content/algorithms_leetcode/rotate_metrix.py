@@ -77,6 +77,20 @@ if __name__ == '__main__':
     # print(list(zip(*a))[::-1])
     a = [1, 3, 4]
     # print(min(a))
-    args = input().split()
-    print(args, type(args))
+    # args = input().split()
+    # print(args, type(args))
+    # while True:
+    #     arg_list = input().split()
+    #     if not arg_list:
+    #         continue
+    #     sum_n = 0
+    #     for i in arg_list:
+    #         sum_n += int(i)
+    #     print(sum_n)
+    while True:
+        try:
+            line = list(map(int, input().split()))
+            print(sum(line))
+        except:
+            break
     pass
